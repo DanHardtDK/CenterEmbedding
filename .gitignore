@@ -163,3 +163,4 @@ cython_debug/
 centerembed/
 centerembed
 config.cfg
+.vscode/launch.json
