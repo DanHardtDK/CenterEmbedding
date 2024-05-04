@@ -1,7 +1,6 @@
-from langchain.chat_models.openai import ChatOpenAI
-from langchain.llms import OpenAI
-from llamaapi import LlamaAPI
-from langchain.llms import HuggingFacePipeline
+from langchain_community.llms import OpenAI
+from langchain_community.chat_models import ChatOpenAI
+from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
 
 
 MODEL_REGISTRY = {
