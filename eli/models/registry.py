@@ -12,26 +12,6 @@ MODEL_REGISTRY = {
         "class": ChatOpenAI,
         "chat": True,
     },
-    "text-davinci-003": {
-        "class": OpenAI,
-        "chat": False,
-    },
-    "text-davinci-002": {
-        "class": OpenAI,
-        "chat": False,
-    },
-    "text-ada-001": {
-        "class": OpenAI,
-        "chat": False,
-    },
-    "text-curie-001": {
-        "class": OpenAI,
-        "chat": False,
-    },
-    "text-babbage-001": {
-        "class": OpenAI,
-        "chat": False,
-    },
     "gpt-neo": {
         "class": HuggingFacePipeline,
         "chat": False,
@@ -41,6 +21,4 @@ MODEL_REGISTRY = {
         "class": OpenAI,
         "chat": True,
     },
-
-
 }
