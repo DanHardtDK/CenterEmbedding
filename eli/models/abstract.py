@@ -3,7 +3,7 @@ from abc import ABC
 from typing import final
 
 from langchain.schema import AIMessage
-from openai.error import RateLimitError, Timeout, APIError, ServiceUnavailableError
+from openai import RateLimitError, Timeout, APIError, APIStatusError, APIConnectionError
 
 from utils.loggers import logger
 
@@ -26,7 +26,7 @@ class GenericAPI(ABC):
             _prediction: AIMessage = self.model(prompt)
             prediction: str = self.postprocess(_prediction)
 
-        except (RateLimitError, Timeout, ServiceUnavailableError, APIError) as e:
+        except (RateLimitError, Timeout, APIStatusError, APIError, APIConnectionError) as e:
             logger.info(f"{e.__class__.__name__}: Waiting {sleep_seconds} seconds...")
             sleep(sleep_seconds)
             return self._run_query(**kwargs)
