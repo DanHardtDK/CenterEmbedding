@@ -23,8 +23,9 @@ class GenericAPI(ABC):
 
         try:
             prompt: str = self.template.format_query(**kwargs)
-            _prediction: AIMessage = self.model(prompt)
+            _prediction: AIMessage = self.model.invoke(prompt)
             prediction: str = self.postprocess(_prediction)
+            print(prediction)
 
         except (RateLimitError, Timeout, APIStatusError, APIError, APIConnectionError) as e:
             logger.info(f"{e.__class__.__name__}: Waiting {sleep_seconds} seconds...")
