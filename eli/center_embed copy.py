@@ -1,24 +1,18 @@
-import random
-import pdb  # noqa: F401
 
-import config as c
+import pdb  # noqa: F401
+import random
+
+import eli.utils.secrets as secrets
+from eli.utils.args import ARGS
 import utils.io as io
 from utils.loggers import logger
-from models.api_builder import API
+from eli.models import MODEL_REGISTRY
 
 
 ####################
 # CONFIG
 ####################
-
-random.seed(c.ARGS.seed)
-
-# CREATE RESULTS FILE
-results_file = io.create_file(
-    dir=f"results/{c.SAVE_DIR}",
-    name=c.RUN_ID,
-    init_text=("File,Iteration,Total,Correct\n"),
-)
+random.seed(ARGS.seed)
 
 ####################
 # RUN EXPERIMENT
@@ -26,6 +20,9 @@ results_file = io.create_file(
 
 
 def run() -> None:
+
+    model = MODEL_REGISTRY[ARGS.model](ARGS.model)
+    
     logger.info(
         f"STARTING EXPERIMENT '{c.RUN_ID}' {'='*10}\n\n"
         + f"{c.PRETTY_ARGS}\n"

@@ -1,34 +1,41 @@
-from eli.models.abstract import GenericAPI
-
 from openai import OpenAI
-from config import LLAMA_KEY
+import weave
+from weave import Model
+from pydantic import field_validator
 
 
-class Llama(GenericAPI):
+class Llama(Model):
 
-    def __init__(self, model, params) -> None:
-        
-        self.params : dict = params
-        self.model : str = model
-        self.model = OpenAI(
-            api_key=LLAMA_KEY, 
+    model_name : str
+    api_key : str
+    prompt : str
+
+    @property
+    def api(self):
+        return OpenAI(
+            api_key=self.api_key, 
             base_url="https://api.llama-api.com"
         )
+    
 
-    def preprocess(self, payload) -> str:
+    def preprocess(self, params : dict, **kwargs) -> dict:
         return {
             "messages": [
-                {"role": "user", "content": payload},
+                {"role": "user", "content": self.prompt},
             ],
-            **self.params
+            **params,
+            **kwargs
         }
 
-    def predict(self, prompt: dict) -> str:
-        return self.model.chat.completions.create(
-            model=self.model, 
-            **prompt
+    @weave.op()
+    async def predict(self, prompt: str, params : dict, **kwargs):
+        response = await self.api.chat.completions.create(
+            model=self.model_name, 
+            **self.preprocess(prompt, params, **kwargs)
         )
+        result = response.choices[0].message.content
 
-    def postprocess(self, prediction: str) -> str:
-        # Example postprocessing: convert prediction to uppercase
-        return prediction["choices"][0]["message"]["content"]
+        if result is None:
+            raise ValueError("No response from model")
+        parsed = json.loads(result)
+        return parsed
