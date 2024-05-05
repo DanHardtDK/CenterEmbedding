@@ -25,7 +25,7 @@ def create_cot_nshot_examples(examples: list[str]) -> str:
 
 def filter_nshot_examples(
     sampled_examples: list[str], tune_n: int, strategy: str
-) -> (list[str], list[str]):
+) -> tuple[list[str], list[str]]:
     if strategy == "default":
         output = (
             create_default_nshot_examples(
