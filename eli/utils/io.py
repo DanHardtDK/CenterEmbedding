@@ -8,7 +8,8 @@ def load_files(FILES) -> list:
     for file_path in FILES:
         # TODO: Make dynamic
         with Path(f"data/centerEmbed/{file_path}").open("r", encoding="UTF-8") as source:
-            yield file_path, json.load(source)
+            objects = json.load(source)
+        yield file_path, objects
 
 
 def write_to_file(file, lines) -> None:

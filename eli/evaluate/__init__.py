@@ -1,7 +1,9 @@
 import weave
 
-# Define any custom scoring function
+def postprocess(string):
+    return string.strip().lower()
+
 @weave.op()
-def evaluator(expected: dict, model_output: dict) -> dict:
-    # Here is where you'd define the logic to score the model output
-    return {'match': expected == model_output['generated_text']}
+def evaluator(target: str, model_output: str) -> dict:
+    model_output = postprocess(model_output)
+    return {'correct': target == model_output}
