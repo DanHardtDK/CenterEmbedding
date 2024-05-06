@@ -1,31 +1,12 @@
 import json
+from typing import Any
 from pathlib import Path
 
 
-def load_files(FILES) -> list:
+def load_files(FILES) -> tuple[str, list[dict[str, Any]]]:
     """Load files from a list of paths."""
 
     for file_path in FILES:
-        # TODO: Make dynamic
-        with Path(f"data/centerEmbed/{file_path}").open("r", encoding="UTF-8") as source:
+        with Path(f"data/{file_path}").open("r", encoding="UTF-8") as source:
             objects = json.load(source)
         yield file_path, objects
-
-
-def write_to_file(file, lines) -> None:
-    """Write lines to a file."""
-
-    with file.open(mode="a", encoding="UTF-8") as target:
-        for line in lines:
-            target.write(line + "\n")
-        # target.writelines(lines)
-
-
-def create_file(dir, name, init_text="") -> None:
-    """Create a file and write lines to it."""
-
-    path = Path(dir) / name
-    path.touch(exist_ok=False)
-    path.write_text(init_text)
-    return path
-    # target.writelines(lines

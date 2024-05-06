@@ -1,17 +1,19 @@
-from pathlib import Path
-from argparse import ArgumentParser, FileType
-from argparse_pydantic import add_args_from_model, create_model_obj
 from typing import List, Optional
-from pydantic import BaseModel, Field, FilePath, field_validator, model_validator
+from pathlib import Path
+from datetime import datetime
+from configparser import ConfigParser
+from argparse import ArgumentParser
+from argparse_pydantic import add_args_from_model, create_model_obj
+from pydantic import BaseModel, Field, field_validator, model_validator
 
-from models import MODEL_REGISTRY
+# from models import MODEL_REGISTRY
 
 
 class Args(BaseModel):
     """ Command line arguments for the experiment """
-    files: Optional[str] = Field(
+    file_list: Optional[str] = Field(
         default=None, 
-        description="Path for list of files containing ellipsis types to test"
+        description="Path for txt containing list of files to test against"
     )
     model: Optional[str] = Field(
         default=None,
@@ -20,7 +22,7 @@ class Args(BaseModel):
     prompt_strategy: Optional[str] = Field(
         default=None, 
         description="Chain-of-thought strategy to use for tuning", 
-        choices=["default", "centerembed", "supervised-cot", "unsupervised-cot"]
+        choices=["default", "center_embed", "supervised_cot", "unsupervised_cot"]
     )
     sample_n: int = Field(
         default=10, 
@@ -43,19 +45,12 @@ class Args(BaseModel):
         description="random seed for reproducibility"
     )
 
-    @field_validator('model')
-    @classmethod
-    def validate_model(cls, v):
-        if v not in MODEL_REGISTRY:
-            raise ValueError("Invalid model specified.")
-        return v
-    
-    @field_validator('files')
-    @classmethod
-    def load_data_sources(cls, v):
-        file_path = Path(v)
-        v = file_path.read_text().splitlines()
-        return v
+    # @field_validator('model')
+    # @classmethod
+    # def validate_model(cls, v):
+    #     if v not in MODEL_REGISTRY:
+    #         raise ValueError("Invalid model specified.")
+    #     return v
 
     @model_validator(mode='after')
     def check_sample_greater_than_tuning(self):
@@ -73,66 +68,47 @@ class Args(BaseModel):
         self.sample_n += tuning_n
         return self
 
-
     @property
-    def LOAD_DIR(self) -> str:
-
-        root_path = "data/"
-        match self.prompt_strategy:
-            case "centerembed", "centerembedP1", "centerembedP2":
-                path = root_path + "centerEmbed"
-            case "default":
-                raise NotImplementedError("Default strategy not implemented")
-            case "supervised":
-                raise NotImplementedError("Supervised strategy not implemented")
-            case "unsupervised":
-                raise NotImplementedError("Unsupervised strategy not implemented")
-            case _:
-                raise ValueError("Invalid strategy specified")
-        return path
+    def files(self) -> List[str]:
+        """ Returns specific paths of json files containing examples
+        to test against. Will have the format '<type>/<file>.json'
+        where 'type' is the type of linguistic challenge in snake_case.
+        (e.g. 'center_embed') """
+        file_path = Path(self.file_list)
+        v = file_path.read_text().splitlines()
+        for file in v:
+            if not (Path("data") / file).exists():
+                raise FileNotFoundError(f"File {file} does not exist")
+            if not file.endswith(".json"):
+                raise ValueError(f"File {file} must be a json file")
+        return v
 
     @property
     def EXP_NAME(self) -> str:
-        return "_".join(
+        s = "_".join(
             [
                 self.model,
                 self.prompt_strategy,
-                str(self.sample_n),
-                str(self.tuning_n),
+                self.file_list.split("/")[-1],
+                f"N{str(self.sample_n)}",
+                f"Tn{str(self.tuning_n)}",
+                f"I{str(self.iterations)}",
+                datetime.now().strftime("%Y%m%d%H%M")
             ]
         )
+        print(s)
+        return s
     
 
-parser = ArgumentParser(prog="ellipses-experiment")
+parser = ArgumentParser()
 parser = add_args_from_model(parser, Args)
 arguments = parser.parse_args()
 
 ARGS = create_model_obj(Args, arguments)
 
-
 ####################
 # CONFIG PARSER
-####################
-#TODO: Fix this mess
 
-from configparser import ConfigParser
-from datetime import datetime
-import logging
-
-from utils.loggers import logger
-from utils.args import ARGS
-
-_config_parser = ConfigParser()
-_config_parser.read("config.cfg")
-if not _config_parser.get("DEFAULT", "API_KEY"):
-    raise ValueError("API_KEY not set in config.cfg")
-
-API_KEY = _config_parser.get("DEFAULT", "API_KEY")
-
-if not _config_parser.get("DEFAULT", "LLAMA_KEY"):
-    raise ValueError("LLAMA_KEY not set in config.cfg")
-
-LLAMA_KEY = _config_parser.get("DEFAULT", "LLAMA_KEY")
-if ARGS.model[:5] == 'llama':
-    API_KEY = LLAMA_KEY
+CONFIG = ConfigParser()
+CONFIG.read("config.cfg")
 

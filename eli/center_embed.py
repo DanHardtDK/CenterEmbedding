@@ -5,14 +5,13 @@ import weave
 from weave import Evaluation
 import asyncio
 
-from utils.args import ARGS, API_KEY
+from utils.args import ARGS
 from utils.io import load_files
 from utils.loggers import logger
 from utils.formatters import format_examples
 from models import MODEL_REGISTRY
 from evaluate import evaluator
-from templates.prompts import CE_TEMPLATE
-
+from templates import PROMPT_TEMPLATE_REGISTRY
 
 
 def run() -> None:
@@ -20,35 +19,31 @@ def run() -> None:
     random.seed(ARGS.seed)
     model = MODEL_REGISTRY[ARGS.model](
         model_name = ARGS.model,
-        api_key = API_KEY, # TODO: Make dynamic
-        prompt_template = CE_TEMPLATE # TODO: Make dynamic, support for few-shot
+        prompt_template = PROMPT_TEMPLATE_REGISTRY[ARGS.prompt_strategy]
     )
 
     weave.init(ARGS.EXP_NAME) # Initialize weave
 
+    # Load files
     files = load_files(ARGS.files)
     for i, (examples_file, examples) in enumerate(files):
-        examples = format_examples(examples)
 
-        ################
-        # SAMPLE EXAMPLES
-        ################
+        # Format examples
+        examples = format_examples(examples, examples_file)
 
+        # Sample examples
         examples: list = random.sample(examples, ARGS.sample_n)
 
-        ################
-        # RUN EVALUATION
-        ################
-
+        # Initialize evaluation
         evaluation = weave.Evaluation(
             dataset=examples,
             scorers=[evaluator],
             trials=ARGS.iterations
         )
 
+        # Run evaluation
         asyncio.run(evaluation.evaluate(model))
-
-
+        
 
 if __name__ == "__main__":
     run()
