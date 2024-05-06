@@ -73,6 +73,7 @@ dependencies:
   - openssl=3.3.0=h0d3ecfb_0
   - orjson=3.10.3=py312h552d48e_0
   - packaging=23.2=pyhd8ed1ab_0
+  - pandas=2.2.2=py312h88edd18_0
   - parso=0.8.4=pyhd8ed1ab_0
   - pexpect=4.9.0=pyhd8ed1ab_0
   - pickleshare=0.7.5=py_1003
@@ -86,7 +87,9 @@ dependencies:
   - pygments=2.17.2=pyhd8ed1ab_0
   - pysocks=1.7.1=pyha2e5f31_6
   - python=3.12.3=h4a7b5fc_0_cpython
+  - python-tzdata=2024.1=pyhd8ed1ab_0
   - python_abi=3.12=4_cp312
+  - pytz=2024.1=pyhd8ed1ab_0
   - pyyaml=6.0.1=py312h02f2b3b_1
   - pyzmq=26.0.2=py312h99b2490_0
   - readline=8.2=h92ec313_1
