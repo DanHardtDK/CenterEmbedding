@@ -32,7 +32,6 @@ class Llama(Model):
                 {"role": "user", "content": prompt},
             ],
             **params,
-            **kwargs
         }
 
     @weave.op()
@@ -43,20 +42,18 @@ class Llama(Model):
         params : dict = {},
         **kwargs
     ):
-        # set metadata
-        with weave.attributes({**kwargs}):
 
-            # format the payload
-            payload = self.format(context, question, params)
+        # format the payload
+        payload = self.format(context, question, params)
 
-            # make the request
-            response = await self.api.chat.completions.create(
-                model=self.model_name, 
-                **payload
-            )
-            if response is None:
-                raise ValueError("No response from model")
+        # make the request
+        response = await self.api.chat.completions.create(
+            model=self.model_name, 
+            **payload
+        )
+        if response is None:
+            raise ValueError("No response from model")
 
-            # unpack the response
-            result = response.choices[0].message.content
-            return result
+        # unpack the response
+        result = response.choices[0].message.content
+        return result
