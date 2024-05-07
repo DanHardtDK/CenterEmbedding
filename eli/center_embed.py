@@ -1,4 +1,3 @@
-
 import pdb  # noqa: F401
 import random
 import weave
@@ -13,23 +12,21 @@ from evaluate import evaluator
 
 
 def run() -> None:
-
     # set seed
     random.seed(ARGS.seed)
 
     # Initialize Weave model object from
     # the model registry and the prompt template
     model = MODEL_REGISTRY[ARGS.model](
-        model_name = ARGS.model,
-        prompt_template = PROMPT_TEMPLATE_REGISTRY[ARGS.prompt_strategy]
+        model_name=ARGS.model,
+        prompt_template=PROMPT_TEMPLATE_REGISTRY[ARGS.prompt_strategy],
     )
 
-    weave.init(ARGS.EXP_NAME) # Initialize weave experiment
+    weave.init(ARGS.EXP_NAME)  # Initialize weave experiment
 
     # Load files
     files = load_files(ARGS.files)
-    for (examples_file, examples) in files:
-
+    for examples_file, examples in files:
         # Format examples
         examples = format_examples(examples)
 
@@ -42,12 +39,12 @@ def run() -> None:
             description=f"Evaluation of '{ARGS.model}' on '{examples_file}' dataset.",
             dataset=examples,
             scorers=[evaluator],
-            trials=ARGS.iterations
+            trials=ARGS.iterations,
         )
 
         # Run evaluation
         asyncio.run(evaluation.evaluate(model))
-        
+
 
 if __name__ == "__main__":
     run()
