@@ -1,4 +1,4 @@
-name: /Users/nicolai/Desktop/cbs/research/CenterEmbedding/centerembed
+name: centerembed
 channels:
   - conda-forge
 dependencies:
