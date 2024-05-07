@@ -1,15 +1,11 @@
-# TODO: Create classes for all the providers
-from langchain_openai.chat_models import ChatOpenAI
-from langchain_community.chat_models import ChatOpenAI
-from langchain_community.llms.huggingface_pipeline import HuggingFacePipeline
 
 from models.llama import Llama
+from models.openai import OpenAI
 
 
 MODEL_REGISTRY = {
-    "gpt-3.5-turbo": ChatOpenAI,
-    "gpt-4": ChatOpenAI,
-    "gpt-neo": HuggingFacePipeline,
+    "gpt-3.5-turbo": OpenAI,
+    "gpt-4": OpenAI,
     "llama-7b-chat": Llama
 }
 

@@ -19,7 +19,14 @@ class Args(BaseModel):
     prompt_strategy: Optional[str] = Field(
         default=None, 
         description="Chain-of-thought strategy to use for tuning", 
-        choices=["default", "center_embed", "supervised_cot", "unsupervised_cot"]
+        choices=[
+            "default",
+            "center_embed",
+            "center_embed_tn1",
+            "center_embed_tn2",
+            "supervised_cot",
+            "unsupervised_cot"
+        ]
     )
     sample_n: int = Field(
         default=10, 
@@ -89,7 +96,7 @@ class Args(BaseModel):
             ]
         )
     
-    
+
 parser = add_args_from_model(ArgumentParser(), Args)
 arguments = parser.parse_args()
 
