@@ -1,10 +1,10 @@
 from typing import Any
 
 
-def format_examples(objects : list[dict[str, Any]]) -> list:
+def format_examples(objects: list[dict[str, Any]]) -> list:
     """Format examples for Weave, since the format is
     different from the one used in the other datasets."""
-    
+
     examples = [
         {
             "id": i,
@@ -13,5 +13,6 @@ def format_examples(objects : list[dict[str, Any]]) -> list:
             "target": ex["A"],
             "level": ex["level"],
         }
-    for i, ex in enumerate(objects)]
+        for i, ex in enumerate(objects)
+    ]
     return examples

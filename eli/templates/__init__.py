@@ -9,5 +9,5 @@ PROMPT_TEMPLATE_REGISTRY = {
     "center_embed_tn2": CE.CE_TEMPLATE_Tn2,
     "default": DEFAULT_TEMPLATE,
     "supervised-cot": SUPERVISED_COT_TEMPLATE,
-    "unsupervised-cot": UNSUPERVISED_COT_TEMPLATE
+    "unsupervised-cot": UNSUPERVISED_COT_TEMPLATE,
 }

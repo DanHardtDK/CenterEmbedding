@@ -6,9 +6,8 @@ from utils.args import CONFIG
 
 
 class OpenAI(Model):
-
-    model_name : str
-    prompt_template : str
+    model_name: str
+    prompt_template: str
 
     @property
     def api_key(self):
@@ -18,13 +17,13 @@ class OpenAI(Model):
 
     @property
     def api(self):
-        # since weave evaluation is an async function, 
+        # since weave evaluation is an async function,
         # we need to use the async version of the OpenAI API
         return AsyncOpenAI(
-            api_key=self.api_key, 
+            api_key=self.api_key,
         )
-    
-    def format(self, context : str, question : str, params : dict) -> dict:
+
+    def format(self, context: str, question: str, params: dict) -> dict:
         prompt = self.prompt_template.format(context=context, question=question)
         return {
             "messages": [
@@ -34,21 +33,13 @@ class OpenAI(Model):
         }
 
     @weave.op()
-    async def predict(
-        self,
-        context : str,
-        question : str,
-        params : dict = {},
-        **kwargs
-    ):
-
+    async def predict(self, context: str, question: str, params: dict = {}, **kwargs):
         # format the payload
         payload = self.format(context, question, params)
 
         # make the request
         response = await self.api.chat.completions.create(
-            model=self.model_name, 
-            **payload
+            model=self.model_name, **payload
         )
         if response is None:
             raise ValueError("No response from model")
