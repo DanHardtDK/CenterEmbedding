@@ -1,16 +1,9 @@
-from typing import Type
-from langchain.prompts import PromptTemplate
+DEFAULT_TEMPLATE = """The following example consist of a context and a question.
 
+{examples}
 
-class DefaultTemplate:
-    """Prompt template for default models"""
+Context: {context}
+Question: {question}
 
-    def __init__(self, template_string: str) -> None:
-        """Initialize the class"""
-        self.template: Type[PromptTemplate] = PromptTemplate.from_template(
-            template_string
-        )
-
-    def format_query(self, **kwargs) -> PromptTemplate:
-        """Format a prompt with the given input"""
-        return self.template.format(**kwargs)
+Now answer the question with only a Yes or No answer:
+"""

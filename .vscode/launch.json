@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python Debugger: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "eli/center_embed.py", // "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+              "PYTHONPATH": "${workspaceFolder}"
+            },
+            "args": [
+                "--file_list", "data/lists/ce-lvl1-3",
+                "--model", "gpt-4", // "llama-7b-chat",
+                "--sample_n", "5",
+                "--iterations", "1",
+                "--tuning_n", "0",
+                "--prompt_strategy", "center_embed_tn1",
+                "--seed", "42"
+            ]
+
+        }
+    ]
+}
