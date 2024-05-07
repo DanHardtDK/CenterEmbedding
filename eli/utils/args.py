@@ -1,12 +1,9 @@
 from typing import List, Optional
 from pathlib import Path
-from datetime import datetime
 from configparser import ConfigParser
 from argparse import ArgumentParser
 from argparse_pydantic import add_args_from_model, create_model_obj
-from pydantic import BaseModel, Field, field_validator, model_validator
-
-# from models import MODEL_REGISTRY
+from pydantic import BaseModel, Field, model_validator
 
 
 class Args(BaseModel):
@@ -45,13 +42,6 @@ class Args(BaseModel):
         description="random seed for reproducibility"
     )
 
-    # @field_validator('model')
-    # @classmethod
-    # def validate_model(cls, v):
-    #     if v not in MODEL_REGISTRY:
-    #         raise ValueError("Invalid model specified.")
-    #     return v
-
     @model_validator(mode='after')
     def check_sample_greater_than_tuning(self):
         sample_n = self.sample_n
@@ -75,6 +65,8 @@ class Args(BaseModel):
         where 'type' is the type of linguistic challenge in snake_case.
         (e.g. 'center_embed') """
         file_path = Path(self.file_list)
+        if not file_path.exists():
+            raise FileNotFoundError(f"File {file_path.cwd()} does not exist")
         v = file_path.read_text().splitlines()
         for file in v:
             if not (Path("data") / file).exists():
@@ -85,7 +77,8 @@ class Args(BaseModel):
 
     @property
     def EXP_NAME(self) -> str:
-        s = "_".join(
+        """ Returns a unique name for the experiment """
+        return "_".join(
             [
                 self.model,
                 self.prompt_strategy,
@@ -93,21 +86,19 @@ class Args(BaseModel):
                 f"N{str(self.sample_n)}",
                 f"Tn{str(self.tuning_n)}",
                 f"I{str(self.iterations)}",
-                datetime.now().strftime("%Y%m%d%H%M")
             ]
         )
-        print(s)
-        return s
     
-
-parser = ArgumentParser()
-parser = add_args_from_model(parser, Args)
+    
+parser = add_args_from_model(ArgumentParser(), Args)
 arguments = parser.parse_args()
 
 ARGS = create_model_obj(Args, arguments)
 
 ####################
 # CONFIG PARSER
+# Read the config file
+####################
 
 CONFIG = ConfigParser()
 CONFIG.read("config.cfg")
