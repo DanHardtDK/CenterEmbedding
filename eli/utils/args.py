@@ -1,5 +1,6 @@
 from typing import List, Optional
 from pathlib import Path
+from datetime import datetime
 from configparser import ConfigParser
 from argparse import ArgumentParser
 from argparse_pydantic import add_args_from_model, create_model_obj
@@ -87,6 +88,7 @@ class Args(BaseModel):
                 f"N{str(self.sample_n)}",
                 f"Tn{str(self.tuning_n)}",
                 f"I{str(self.iterations)}",
+                f"{datetime.now().strftime('%d-%m-%y-%H-%M')}",
             ]
         )
 

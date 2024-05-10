@@ -25,4 +25,11 @@ MODEL_REGISTRY = {
     "OpenHermes-2p5-Mistral-7B": Llama,
     "OpenHermes-2-Mistral-7B": Llama,
     "Qwen1.5-72B-Chat": Llama,  # ( replace 72B with 32B / 14B / 7B / 4B / 1.8B / 0.5B)
+    "gemma-7b": Llama,
+    "gemma-2b": Llama,
+    "mixtral-8x22b-instruct": Llama,
+    "mixtral-8x7b-instruct": Llama,
+    "mistral-7b-instruct": Llama,
+    "mistral-7b": Llama,  # (not a chat model)
+    "mixtral-8x22b": Llama,  # (not a chat model)
 }
