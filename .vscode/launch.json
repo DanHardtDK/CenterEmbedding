@@ -16,11 +16,11 @@
             },
             "args": [
                 "--file_list", "data/lists/ce-lvl1-3",
-                "--model", "gpt-4", // "llama-7b-chat",
-                "--sample_n", "5",
+                "--model", "llama3-8b", // "llama-7b-chat",
+                "--sample_n", "50",
                 "--iterations", "1",
                 "--tuning_n", "0",
-                "--prompt_strategy", "center_embed_tn1",
+                "--prompt_strategy", "center_embed",
                 "--seed", "42"
             ]
 

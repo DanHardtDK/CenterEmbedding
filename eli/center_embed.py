@@ -43,7 +43,9 @@ def run() -> None:
         )
 
         # Run evaluation
-        summary, predictions = asyncio.run(evaluator.evaluate(model, return_rows=True))
+        summary, predictions = asyncio.run(
+            evaluator.evaluate(model=model, return_rows=True, workers=3)
+        )
 
         io.write_results(
             summary=summary,
