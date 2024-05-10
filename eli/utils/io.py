@@ -22,7 +22,8 @@ SUMMARY_COLUMNS = [
 
 PREDICTION_COLUMNS = [
     "id",
-    "examples_file" "level",
+    "examples_file",
+    "level",
     "context",
     "question",
     "target",
@@ -116,13 +117,7 @@ def write_results(
     examples: list,
     examples_file: Path,
 ) -> None:
-    """write results to files.
-
-    1. Summary is appended to a .csv file, named "summary.csv", with the following format:
-        model, prompt_strategy, file_list, example_file, sample_n, tuning_n, iterations, mean_score, mean_edit_distance, mean_latency
-    2. Rows are written to a .dat file, named "predictions.dat" with the following format:
-        model_output, scores, example_id
-    3. Arguments are written to a .json file."""
+    """write results to files."""
 
     file_path = make_file(parameters.EXP_NAME)
 

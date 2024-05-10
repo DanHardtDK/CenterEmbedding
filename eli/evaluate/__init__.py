@@ -16,6 +16,9 @@ def eval_function(target: str, model_output: str) -> dict:
     the target or if the edit distance between the two
     strings is less than 2."""
 
+    if not model_output:
+        logger.info("Model output is empty")
+        model_output = ""
     model_output = postprocess(model_output)
     edit_distance = editdistance.eval(target, model_output)
 
