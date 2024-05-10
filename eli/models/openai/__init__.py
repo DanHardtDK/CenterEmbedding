@@ -13,7 +13,7 @@ class OpenAI(Model):
     def api_key(self):
         if api_key := CONFIG.get("DEFAULT", "OPENAI_KEY"):
             return api_key
-        raise ValueError("OPENAI API_KEY not set in config.cfg")
+        raise ValueError("OPENAI_KEY not set in config.cfg")
 
     @property
     def api(self):
@@ -33,7 +33,9 @@ class OpenAI(Model):
         }
 
     @weave.op()
-    async def predict(self, context: str, question: str, params: dict = {}, **kwargs):
+    async def predict(
+        self, context: str, question: str, params: dict = {}, **kwargs
+    ) -> str:
         # format the payload
         payload = self.format(context, question, params)
 
