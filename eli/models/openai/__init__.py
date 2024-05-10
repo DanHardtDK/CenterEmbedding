@@ -13,7 +13,7 @@ class OpenAI(Model):
     def api_key(self):
         if api_key := CONFIG.get("DEFAULT", "OPENAI_KEY"):
             return api_key
-        raise ValueError("OPENAI API_KEY not set in config.cfg")
+        raise ValueError("OPENAI_KEY not set in config.cfg")
 
     @property
     def api(self):
@@ -47,3 +47,5 @@ class OpenAI(Model):
         # unpack the response
         result = response.choices[0].message.content
         return result
+
+    
