@@ -31,7 +31,7 @@ class Evaluator(Evaluation):
         dataset = cast(Dataset, self.dataset)
         _rows = dataset.rows
         trial_rows = list(_rows) * self.trials
-        async for example, eval_row in util.async_foreach(
+        async for _, eval_row in util.async_foreach(
             trial_rows, eval_example, get_weave_parallelism()
         ):
             n_complete += 1
@@ -47,7 +47,6 @@ class Evaluator(Evaluation):
             eval_rows.append(eval_row)
 
         summary = await self.summarize(eval_rows)
-        # print("Evaluation summary", summary)
 
         if return_rows:
             return summary, eval_rows
