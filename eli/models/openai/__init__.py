@@ -37,6 +37,9 @@ class OpenAI(Model):
         # format the payload
         payload = self.format(context, question, params)
 
+        import time
+        time.sleep(.5)
+
         # make the request
         response = await self.api.chat.completions.create(
             model=self.model_name, **payload
