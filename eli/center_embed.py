@@ -4,11 +4,11 @@ import weave
 import asyncio
 
 from utils.args import ARGS
-from utils.io import load_files
+from utils import io
 from utils.formatters import format_examples
 from models import MODEL_REGISTRY
 from templates import PROMPT_TEMPLATE_REGISTRY
-from evaluate import evaluator
+from evaluate import Evaluator, eval_function
 
 
 def run() -> None:
@@ -25,7 +25,7 @@ def run() -> None:
     weave.init(ARGS.EXP_NAME)  # Initialize weave experiment
 
     # Load files
-    files = load_files(ARGS.files)
+    files = io.load_files(ARGS.files)
     for examples_file, examples in files:
         # Format examples
         examples = format_examples(examples)
@@ -34,16 +34,24 @@ def run() -> None:
         examples: list = random.sample(examples, ARGS.sample_n)
 
         # Initialize evaluation
-        evaluation = weave.Evaluation(
+        evaluator = Evaluator(
             name=f"{examples_file}-{ARGS.EXP_NAME}",
             description=f"Evaluation of '{ARGS.model}' on '{examples_file}' dataset.",
             dataset=examples,
-            scorers=[evaluator],
+            scorers=[eval_function],
             trials=ARGS.iterations,
         )
 
         # Run evaluation
-        asyncio.run(evaluation.evaluate(model))
+        summary, predictions = asyncio.run(evaluator.evaluate(model, return_rows=True))
+
+        io.write_results(
+            summary=summary,
+            predictions=predictions,
+            examples_file=examples_file,
+            parameters=ARGS,
+            examples=examples,
+        )
 
 
 if __name__ == "__main__":

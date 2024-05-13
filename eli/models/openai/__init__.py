@@ -21,6 +21,7 @@ class OpenAI(Model):
         # we need to use the async version of the OpenAI API
         return AsyncOpenAI(
             api_key=self.api_key,
+            max_retries=CONFIG.getint("DEFAULT", "OPENAI_MAX_RETRIES"),
         )
 
     def format(self, context: str, question: str, params: dict) -> dict:
@@ -33,7 +34,9 @@ class OpenAI(Model):
         }
 
     @weave.op()
-    async def predict(self, context: str, question: str, params: dict = {}, **kwargs):
+    async def predict(
+        self, context: str, question: str, params: dict = {}, **kwargs
+    ) -> str:
         # format the payload
         payload = self.format(context, question, params)
 
