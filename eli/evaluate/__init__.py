@@ -15,6 +15,11 @@ def evaluator(target: str, model_output: str) -> dict:
     the target or if the edit distance between the two
     strings is less than 2."""
 
+
+    if model_output is None:
+        model_output = ""
+        return
+    
     model_output = postprocess(model_output)
     edit_distance = editdistance.eval(target, model_output)
 
