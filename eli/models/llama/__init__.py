@@ -3,6 +3,7 @@ import weave
 from weave import Model
 
 from utils.args import CONFIG
+from utils.loggers import logger  # noqa
 
 
 class Llama(Model):
@@ -19,7 +20,11 @@ class Llama(Model):
     def api(self):
         # since weave evaluation is an async function,
         # we need to use the async version of the OpenAI API
-        return AsyncOpenAI(api_key=self.api_key, base_url="https://api.llama-api.com")
+        return AsyncOpenAI(
+            api_key=self.api_key,
+            base_url="https://api.llama-api.com",
+            max_retries=5,
+        )
 
     def format(self, context: str, question: str, params: dict) -> dict:
         prompt = self.prompt_template.format(context=context, question=question)
@@ -33,6 +38,7 @@ class Llama(Model):
     @weave.op()
     async def predict(self, context: str, question: str, params: dict = {}, **kwargs):
         # format the payload
+
         payload = self.format(context, question, params)
 
         # make the request
