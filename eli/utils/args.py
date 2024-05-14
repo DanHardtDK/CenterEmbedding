@@ -5,6 +5,7 @@ from configparser import ConfigParser
 from argparse import ArgumentParser
 from argparse_pydantic import add_args_from_model, create_model_obj
 from pydantic import BaseModel, Field, model_validator
+from functools import cached_property
 
 
 class Args(BaseModel):
@@ -77,7 +78,7 @@ class Args(BaseModel):
                 raise ValueError(f"File {file} must be a json file")
         return v
 
-    @property
+    @cached_property
     def EXP_NAME(self) -> str:
         """Returns a unique name for the experiment"""
         return "_".join(

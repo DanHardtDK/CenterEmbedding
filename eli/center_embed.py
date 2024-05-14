@@ -5,6 +5,7 @@ import asyncio
 
 from utils.args import ARGS
 from utils import io
+from utils.loggers import logger  # noqa: F401
 from utils.formatters import format_examples
 from models import MODEL_REGISTRY
 from templates import PROMPT_TEMPLATE_REGISTRY
@@ -28,16 +29,16 @@ def run() -> None:
     files = io.load_files(ARGS.files)
     for examples_file, examples in files:
         # Format examples
-        examples = format_examples(examples)
+        formatted_examples = format_examples(examples)
 
         # Sample examples
-        examples: list = random.sample(examples, ARGS.sample_n)
+        sampled_examples: list = random.sample(formatted_examples, ARGS.sample_n)
 
         # Initialize evaluation
         evaluator = Evaluator(
             name=f"{examples_file}-{ARGS.EXP_NAME}",
             description=f"Evaluation of '{ARGS.model}' on '{examples_file}' dataset.",
-            dataset=examples,
+            dataset=sampled_examples,
             scorers=[eval_function],
             trials=ARGS.iterations,
         )
@@ -52,7 +53,7 @@ def run() -> None:
             predictions=predictions,
             examples_file=examples_file,
             parameters=ARGS,
-            examples=examples,
+            examples=sampled_examples,
         )
 
 
