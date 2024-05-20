@@ -167,3 +167,4 @@ cython_debug/
 centerembed/
 centerembed
 config.cfg
+results/*/predictions.dat
