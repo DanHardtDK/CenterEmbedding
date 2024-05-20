@@ -1,6 +1,7 @@
 import weave
 import editdistance
 
+from evaluate.evaluator import Evaluator  # noqa: F401
 from utils.loggers import logger
 
 
@@ -9,17 +10,16 @@ def postprocess(string):
 
 
 @weave.op()
-def evaluator(target: str, model_output: str) -> dict:
+def eval_function(target: str, model_output: str) -> dict:
     """Evaluate the model output against the target. We
     consider the model output correct if it exactly matches
     the target or if the edit distance between the two
     strings is less than 2."""
 
-
-    if model_output is None:
+    if not model_output:
+        logger.info("Model output is empty")
         model_output = ""
-        return
-    
+        
     model_output = postprocess(model_output)
     edit_distance = editdistance.eval(target, model_output)
 
