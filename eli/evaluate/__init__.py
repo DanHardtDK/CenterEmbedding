@@ -19,6 +19,7 @@ def eval_function(target: str, model_output: str) -> dict:
     if not model_output:
         logger.info("Model output is empty")
         model_output = ""
+        
     model_output = postprocess(model_output)
     edit_distance = editdistance.eval(target, model_output)
 
