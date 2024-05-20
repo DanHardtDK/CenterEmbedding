@@ -81,7 +81,7 @@ class Args(BaseModel):
     @cached_property
     def EXP_NAME(self) -> str:
         """Returns a unique name for the experiment"""
-        return "_".join(
+        name = "_".join(
             [
                 self.model,
                 self.prompt_strategy,
@@ -92,6 +92,8 @@ class Args(BaseModel):
                 f"{datetime.now().strftime('%d-%m-%y-%H-%M')}",
             ]
         )
+        assert "/" not in name, "Name cannot contain '/'"
+        return name
 
 
 parser = add_args_from_model(ArgumentParser(), Args)
