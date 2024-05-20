@@ -7,6 +7,8 @@ from argparse_pydantic import add_args_from_model, create_model_obj
 from pydantic import BaseModel, Field, model_validator
 from functools import cached_property
 
+from utils.loggers import logger
+
 
 class Args(BaseModel):
     """Command line arguments for the experiment"""
@@ -46,6 +48,14 @@ class Args(BaseModel):
     )
 
     @model_validator(mode="after")
+    def warn_tuning_n(self):
+        if self.tuning_n > 0:
+            logger.warning(
+                "Warning: Tuning is not yet implemented."
+                "Setting tuning_n does absolutely nothing."
+            )
+
+    @model_validator(mode="after")
     def check_sample_greater_than_tuning(self):
         sample_n = self.sample_n
         tuning_n = self.tuning_n
@@ -61,7 +71,7 @@ class Args(BaseModel):
         self.sample_n += tuning_n
         return self
 
-    @property
+    @cached_property
     def files(self) -> List[str]:
         """Returns specific paths of json files containing examples
         to test against. Will have the format '<type>/<file>.json'
