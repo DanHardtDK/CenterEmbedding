@@ -3,7 +3,7 @@
 ######################
 
 # SET BASE INSTRUCTIONS
-CE_TEMPLATE = """You will be given an example consisting of a context and a question to answer. The answer should always be of this form "The N V the N", where N stands for a single word that is a noun, and V stands for a single word that is a verb.
+CE_TEMPLATE = """You will be given an example consisting of a context and a question to answer. The answer should always be of this form "The <NOUN> <VERB> the <NOUN>".
 
 Now answer the question:
 
@@ -11,7 +11,7 @@ Context: {context}
 Question: {question}
 """
 
-CE_TEMPLATE_Tn1 = """You will be given an example consisting of a context and a question to answer. The answer should always be of this form "The N V the N", where N stands for a single word that is a noun, and V stands for a single word that is a verb. 
+CE_TEMPLATE_Tn1 = """You will be given an example consisting of a context and a question to answer. The answer should always be of this form "The N V the N", where N stands for a single word that is a noun, and V stands for a single word that is a verb.
 Here is an example:
 
 Context: The student the man saw is happy.

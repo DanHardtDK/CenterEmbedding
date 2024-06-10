@@ -1,8 +1,10 @@
 from openai import AsyncOpenAI
 import weave
 from weave import Model
+from tenacity import retry, stop_after_attempt
 
 from utils.args import CONFIG
+from utils.loggers import logger  # noqa
 
 
 class Llama(Model):
@@ -19,7 +21,12 @@ class Llama(Model):
     def api(self):
         # since weave evaluation is an async function,
         # we need to use the async version of the OpenAI API
-        return AsyncOpenAI(api_key=self.api_key, base_url="https://api.llama-api.com")
+        return AsyncOpenAI(
+            api_key=self.api_key,
+            base_url="https://api.llama-api.com",
+            max_retries=5,
+            timeout=60,
+        )
 
     def format(self, context: str, question: str, params: dict) -> dict:
         prompt = self.prompt_template.format(context=context, question=question)
@@ -31,6 +38,10 @@ class Llama(Model):
         }
 
     @weave.op()
+    @retry(
+        stop=stop_after_attempt(3),
+        retry_error_callback=(lambda x: logger.error(f"[Retrying] {x}")),
+    )
     async def predict(self, context: str, question: str, params: dict = {}, **kwargs):
         # format the payload
         payload = self.format(context, question, params)
