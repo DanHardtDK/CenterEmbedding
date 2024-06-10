@@ -29,8 +29,11 @@ options:
   --file_list FILE_LIST
                         Path for txt containing list of files to test against
   --model MODEL         LLM to test
-  --prompt_strategy {default,center_embed,center_embed_tn1,center_embed_tn2,supervised_cot,unsupervised_cot}
-                        Chain-of-thought strategy to use for tuning
+  --prompt_strategy {default,center_embed,center_embed_tn1,center_embed_tn2}
+                        strategy to use for tuning
+			center_embed = P0
+			center_embed_tn1 = P1 (prompt with single level 1 example, with Q0 question)
+			center_embed_tn1 = P1 (prompt with two examples, a level 1 example and a level 2 example, both with Q0 questions)
   --sample_n SAMPLE_N   number of ellipses examples to test
   --iterations {1,2,3,5,10,50}
                         number of iterations to run
