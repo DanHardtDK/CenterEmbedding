@@ -4,7 +4,10 @@ from datetime import datetime
 from configparser import ConfigParser
 from argparse import ArgumentParser
 from argparse_pydantic import add_args_from_model, create_model_obj
-from pydantic import BaseModel, Field, model_validator
+from pydantic import BaseModel, Field, model_validator, field_validator
+from functools import cached_property
+
+from utils.loggers import logger
 
 
 class Args(BaseModel):
@@ -44,6 +47,15 @@ class Args(BaseModel):
         default=42, description="random seed for reproducibility"
     )
 
+    @field_validator("tuning_n", mode="before")
+    def warn_tuning_n(self):
+        if self.tuning_n > 0:
+            logger.warning(
+                "Warning: Tuning is not yet implemented."
+                "Setting tuning_n does absolutely nothing."
+            )
+        return self
+
     @model_validator(mode="after")
     def check_sample_greater_than_tuning(self):
         sample_n = self.sample_n
@@ -60,7 +72,7 @@ class Args(BaseModel):
         self.sample_n += tuning_n
         return self
 
-    @property
+    @cached_property
     def files(self) -> List[str]:
         """Returns specific paths of json files containing examples
         to test against. Will have the format '<type>/<file>.json'
@@ -77,10 +89,10 @@ class Args(BaseModel):
                 raise ValueError(f"File {file} must be a json file")
         return v
 
-    @property
+    @cached_property
     def EXP_NAME(self) -> str:
         """Returns a unique name for the experiment"""
-        return "_".join(
+        name = "_".join(
             [
                 self.model,
                 self.prompt_strategy,
@@ -91,6 +103,8 @@ class Args(BaseModel):
                 f"{datetime.now().strftime('%d-%m-%y-%H-%M')}",
             ]
         )
+        assert "/" not in name, "Name cannot contain '/'"
+        return name
 
 
 parser = add_args_from_model(ArgumentParser(), Args)

@@ -13,9 +13,13 @@ from weave.flow import util
 class Evaluator(Evaluation):
     @weave_op()
     async def evaluate(
-        self, model: Union[Callable, Model], return_rows: bool = False
+        self,
+        model: Union[Callable, Model],
+        return_rows: bool = False,
+        workers: int = get_weave_parallelism(),
     ) -> dict | tuple[dict, list]:
         async def eval_example(example: dict) -> dict:
+            # Function that processes each example
             try:
                 eval_row = await self.predict_and_score(model, example)
             except OpCallError as e:
@@ -31,8 +35,10 @@ class Evaluator(Evaluation):
         dataset = cast(Dataset, self.dataset)
         _rows = dataset.rows
         trial_rows = list(_rows) * self.trials
+
+        # Process each row with a semaphore-controlled task
         async for _, eval_row in util.async_foreach(
-            trial_rows, eval_example, get_weave_parallelism()
+            sequence=trial_rows, func=eval_example, max_concurrent_tasks=workers
         ):
             n_complete += 1
             print(f"Evaluated {n_complete} of {len(trial_rows)} examples")
@@ -44,10 +50,11 @@ class Evaluator(Evaluation):
                 scorer_name, _, _ = get_scorer_attributes(scorer)
                 if scorer_name not in eval_row["scores"]:
                     eval_row["scores"][scorer_name] = {}
+
             eval_rows.append(eval_row)
 
+        # Summarize the results after all rows have been evaluated
         summary = await self.summarize(eval_rows)
-
         if return_rows:
             return summary, eval_rows
         return summary
