@@ -1,6 +1,7 @@
 from openai import AsyncOpenAI
 import weave
 from weave import Model
+import tenacity
 from tenacity import retry, stop_after_attempt
 
 from utils.args import CONFIG

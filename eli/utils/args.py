@@ -26,6 +26,13 @@ class Args(BaseModel):
             "center_embed",
             "center_embed_tn1",
             "center_embed_tn2",
+            "center_embed_tn2_2",
+            "center_embed_tn3",
+            "center_embed_tn3_2",
+            "center_embed_tn3_only",            
+            "center_embed_tn4",
+            "center_embed_tn4_2",
+            "center_embed_tn4_only",                                                
             "supervised_cot",
             "unsupervised_cot",
         ],
@@ -47,14 +54,14 @@ class Args(BaseModel):
         default=42, description="random seed for reproducibility"
     )
 
-    @field_validator("tuning_n", mode="before")
-    def warn_tuning_n(self):
-        if self.tuning_n > 0:
-            logger.warning(
-                "Warning: Tuning is not yet implemented."
-                "Setting tuning_n does absolutely nothing."
-            )
-        return self
+    # @field_validator("tuning_n", mode="before")
+    # def warn_tuning_n(self):
+    #     if self.tuning_n > 0:
+    #         logger.warning(
+    #             "Warning: Tuning is not yet implemented."
+    #             "Setting tuning_n does absolutely nothing."
+    #         )
+    #     return self
 
     @model_validator(mode="after")
     def check_sample_greater_than_tuning(self):
