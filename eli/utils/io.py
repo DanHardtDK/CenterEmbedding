@@ -107,6 +107,8 @@ def write_rows(
                 output["scores"]["eval_function"]["exact_match"],
                 output["model_latency"],
             ]
+            print('Context',example["context"],'Target',example["target"],'Model Output', output["model_output"])
+            
             f.write(f"{','.join(map(str, prediction_row))}\n")
 
 
