@@ -44,8 +44,10 @@ def run() -> None:
         )
 
         # Run evaluation
+        # asyncio messes up order of predictions vs examples
+        # changes workers from 3 to 1 so it is not async
         summary, predictions = asyncio.run(
-            evaluator.evaluate(model=model, return_rows=True, workers=3)
+            evaluator.evaluate(model=model, return_rows=True, workers=1)
         )
 
         io.write_results(
