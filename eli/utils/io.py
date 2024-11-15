@@ -5,12 +5,10 @@ from pathlib import Path
 
 SUMMARY_COLUMNS = [
     "model",
-    "prompt_strategy",
     "file_list",
     "example_file",
     "sample_n",
     "tuning_n",
-    "iterations",
     "seed",
     "correct_true_count",
     "correct_true_fraction",
@@ -70,10 +68,8 @@ def write_summary(
 ) -> None:
     summary_row = [
         parameters.model,
-        parameters.prompt_strategy,
         parameters.sample_n,
         parameters.tuning_n,
-        parameters.iterations,
         parameters.seed,
         parameters.file_list.split("/")[-1],
         examples_file.split("/")[-1],
