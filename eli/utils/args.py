@@ -18,66 +18,32 @@ class Args(BaseModel):
         description="Path for txt containing list of files to test against",
     )
     model: Optional[str] = Field(default=None, description="LLM to test")
-    prompt_strategy: Optional[str] = Field(
-        default=None,
-        description="Chain-of-thought strategy to use for tuning",
-        choices=[
-            "default",
-            "center_embed",
-            "center_embed_tn1",
-            "center_embed_tn2",
-            "center_embed_tn2_2",
-            "center_embed_tn3",
-            "center_embed_tn3_2",
-            "center_embed_tn3_only",            
-            "center_embed_tn4",
-            "center_embed_tn4_2",
-            "center_embed_tn4_only",                                                
-            "supervised_cot",
-            "unsupervised_cot",
-        ],
-    )
     sample_n: int = Field(
-        default=10, description="number of ellipses examples to test", gt=0, lt=10_000
-    )
-    iterations: int = Field(
-        default=1,
-        description="number of iterations to run",
-        choices=[1, 2, 3, 5, 10, 50],
+        default=10, description="number of examples to test", gt=0, lt=10_000
     )
     tuning_n: int = Field(
         default=0,
         description="Number of in-prompt n-shot examples to use for tuning",
-        choices=[0, 1, 2, 3, 5, 10, 20],
     )
     seed: Optional[int] = Field(
         default=42, description="random seed for reproducibility"
     )
 
-    # @field_validator("tuning_n", mode="before")
-    # def warn_tuning_n(self):
-    #     if self.tuning_n > 0:
-    #         logger.warning(
-    #             "Warning: Tuning is not yet implemented."
-    #             "Setting tuning_n does absolutely nothing."
-    #         )
+    # @model_validator(mode="after")
+    # def check_sample_greater_than_tuning(self):
+    #     sample_n = self.sample_n
+    #     tuning_n = self.tuning_n
+    #     if sample_n <= tuning_n + 1:
+    #         raise ValueError("sample_n must be larger than tuning_n")
+
+    #     ####################
+    #     # ADJUST SAMPLE SIZE
+    #     # add tune_n to sample size, since we
+    #     # will be using tune_n examples for tuning
+    #     ####################
+
+    #     self.sample_n += tuning_n
     #     return self
-
-    @model_validator(mode="after")
-    def check_sample_greater_than_tuning(self):
-        sample_n = self.sample_n
-        tuning_n = self.tuning_n
-        if sample_n <= tuning_n + 1:
-            raise ValueError("sample_n must be larger than tuning_n")
-
-        ####################
-        # ADJUST SAMPLE SIZE
-        # add tune_n to sample size, since we
-        # will be using tune_n examples for tuning
-        ####################
-
-        self.sample_n += tuning_n
-        return self
 
     @cached_property
     def files(self) -> List[str]:
@@ -102,11 +68,9 @@ class Args(BaseModel):
         name = "_".join(
             [
                 self.model,
-                self.prompt_strategy,
                 self.file_list.split("/")[-1],
                 f"N{str(self.sample_n)}",
                 f"Tn{str(self.tuning_n)}",
-                f"I{str(self.iterations)}",
                 f"{datetime.now().strftime('%d-%m-%y-%H-%M')}",
             ]
         )
