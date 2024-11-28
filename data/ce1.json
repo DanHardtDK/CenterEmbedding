@@ -1,0 +1,3782 @@
+[
+    {
+        "Context": "The teacher the student saw is happy",
+        "Q": "Who saw who?",
+        "A": "the student saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student saw left",
+        "Q": "Who saw who?",
+        "A": "the student saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student saw is glad",
+        "Q": "Who saw who?",
+        "A": "the student saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student hit is happy",
+        "Q": "Who hit who?",
+        "A": "the student hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student hit left",
+        "Q": "Who hit who?",
+        "A": "the student hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student hit is glad",
+        "Q": "Who hit who?",
+        "A": "the student hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student likes is happy",
+        "Q": "Who likes who?",
+        "A": "the student likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student likes left",
+        "Q": "Who likes who?",
+        "A": "the student likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student likes is glad",
+        "Q": "Who likes who?",
+        "A": "the student likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student hates is happy",
+        "Q": "Who hates who?",
+        "A": "the student hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student hates left",
+        "Q": "Who hates who?",
+        "A": "the student hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student hates is glad",
+        "Q": "Who hates who?",
+        "A": "the student hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student knows is happy",
+        "Q": "Who knows who?",
+        "A": "the student knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student knows left",
+        "Q": "Who knows who?",
+        "A": "the student knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the student knows is glad",
+        "Q": "Who knows who?",
+        "A": "the student knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver saw is happy",
+        "Q": "Who saw who?",
+        "A": "the driver saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver saw left",
+        "Q": "Who saw who?",
+        "A": "the driver saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver saw is glad",
+        "Q": "Who saw who?",
+        "A": "the driver saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver hit is happy",
+        "Q": "Who hit who?",
+        "A": "the driver hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver hit left",
+        "Q": "Who hit who?",
+        "A": "the driver hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver hit is glad",
+        "Q": "Who hit who?",
+        "A": "the driver hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver likes is happy",
+        "Q": "Who likes who?",
+        "A": "the driver likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver likes left",
+        "Q": "Who likes who?",
+        "A": "the driver likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver likes is glad",
+        "Q": "Who likes who?",
+        "A": "the driver likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver hates is happy",
+        "Q": "Who hates who?",
+        "A": "the driver hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver hates left",
+        "Q": "Who hates who?",
+        "A": "the driver hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver hates is glad",
+        "Q": "Who hates who?",
+        "A": "the driver hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver knows is happy",
+        "Q": "Who knows who?",
+        "A": "the driver knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver knows left",
+        "Q": "Who knows who?",
+        "A": "the driver knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the driver knows is glad",
+        "Q": "Who knows who?",
+        "A": "the driver knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl saw is happy",
+        "Q": "Who saw who?",
+        "A": "the girl saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl saw left",
+        "Q": "Who saw who?",
+        "A": "the girl saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl saw is glad",
+        "Q": "Who saw who?",
+        "A": "the girl saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl hit is happy",
+        "Q": "Who hit who?",
+        "A": "the girl hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl hit left",
+        "Q": "Who hit who?",
+        "A": "the girl hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl hit is glad",
+        "Q": "Who hit who?",
+        "A": "the girl hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl likes is happy",
+        "Q": "Who likes who?",
+        "A": "the girl likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl likes left",
+        "Q": "Who likes who?",
+        "A": "the girl likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl likes is glad",
+        "Q": "Who likes who?",
+        "A": "the girl likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl hates is happy",
+        "Q": "Who hates who?",
+        "A": "the girl hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl hates left",
+        "Q": "Who hates who?",
+        "A": "the girl hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl hates is glad",
+        "Q": "Who hates who?",
+        "A": "the girl hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl knows is happy",
+        "Q": "Who knows who?",
+        "A": "the girl knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl knows left",
+        "Q": "Who knows who?",
+        "A": "the girl knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the girl knows is glad",
+        "Q": "Who knows who?",
+        "A": "the girl knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man saw is happy",
+        "Q": "Who saw who?",
+        "A": "the man saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man saw left",
+        "Q": "Who saw who?",
+        "A": "the man saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man saw is glad",
+        "Q": "Who saw who?",
+        "A": "the man saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man hit is happy",
+        "Q": "Who hit who?",
+        "A": "the man hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man hit left",
+        "Q": "Who hit who?",
+        "A": "the man hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man hit is glad",
+        "Q": "Who hit who?",
+        "A": "the man hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man likes is happy",
+        "Q": "Who likes who?",
+        "A": "the man likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man likes left",
+        "Q": "Who likes who?",
+        "A": "the man likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man likes is glad",
+        "Q": "Who likes who?",
+        "A": "the man likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man hates is happy",
+        "Q": "Who hates who?",
+        "A": "the man hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man hates left",
+        "Q": "Who hates who?",
+        "A": "the man hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man hates is glad",
+        "Q": "Who hates who?",
+        "A": "the man hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man knows is happy",
+        "Q": "Who knows who?",
+        "A": "the man knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man knows left",
+        "Q": "Who knows who?",
+        "A": "the man knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the man knows is glad",
+        "Q": "Who knows who?",
+        "A": "the man knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman saw is happy",
+        "Q": "Who saw who?",
+        "A": "the woman saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman saw left",
+        "Q": "Who saw who?",
+        "A": "the woman saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman saw is glad",
+        "Q": "Who saw who?",
+        "A": "the woman saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman hit is happy",
+        "Q": "Who hit who?",
+        "A": "the woman hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman hit left",
+        "Q": "Who hit who?",
+        "A": "the woman hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman hit is glad",
+        "Q": "Who hit who?",
+        "A": "the woman hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman likes is happy",
+        "Q": "Who likes who?",
+        "A": "the woman likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman likes left",
+        "Q": "Who likes who?",
+        "A": "the woman likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman likes is glad",
+        "Q": "Who likes who?",
+        "A": "the woman likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman hates is happy",
+        "Q": "Who hates who?",
+        "A": "the woman hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman hates left",
+        "Q": "Who hates who?",
+        "A": "the woman hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman hates is glad",
+        "Q": "Who hates who?",
+        "A": "the woman hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman knows is happy",
+        "Q": "Who knows who?",
+        "A": "the woman knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman knows left",
+        "Q": "Who knows who?",
+        "A": "the woman knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the woman knows is glad",
+        "Q": "Who knows who?",
+        "A": "the woman knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy saw is happy",
+        "Q": "Who saw who?",
+        "A": "the boy saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy saw left",
+        "Q": "Who saw who?",
+        "A": "the boy saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy saw is glad",
+        "Q": "Who saw who?",
+        "A": "the boy saw the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy hit is happy",
+        "Q": "Who hit who?",
+        "A": "the boy hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy hit left",
+        "Q": "Who hit who?",
+        "A": "the boy hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy hit is glad",
+        "Q": "Who hit who?",
+        "A": "the boy hit the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy likes is happy",
+        "Q": "Who likes who?",
+        "A": "the boy likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy likes left",
+        "Q": "Who likes who?",
+        "A": "the boy likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy likes is glad",
+        "Q": "Who likes who?",
+        "A": "the boy likes the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy hates is happy",
+        "Q": "Who hates who?",
+        "A": "the boy hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy hates left",
+        "Q": "Who hates who?",
+        "A": "the boy hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy hates is glad",
+        "Q": "Who hates who?",
+        "A": "the boy hates the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy knows is happy",
+        "Q": "Who knows who?",
+        "A": "the boy knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy knows left",
+        "Q": "Who knows who?",
+        "A": "the boy knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The teacher the boy knows is glad",
+        "Q": "Who knows who?",
+        "A": "the boy knows the teacher.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher saw is happy",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher saw left",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher saw is glad",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher hit is happy",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher hit left",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher hit is glad",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher likes is happy",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher likes left",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher likes is glad",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher hates is happy",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher hates left",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher hates is glad",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher knows is happy",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher knows left",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the teacher knows is glad",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver saw is happy",
+        "Q": "Who saw who?",
+        "A": "the driver saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver saw left",
+        "Q": "Who saw who?",
+        "A": "the driver saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver saw is glad",
+        "Q": "Who saw who?",
+        "A": "the driver saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver hit is happy",
+        "Q": "Who hit who?",
+        "A": "the driver hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver hit left",
+        "Q": "Who hit who?",
+        "A": "the driver hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver hit is glad",
+        "Q": "Who hit who?",
+        "A": "the driver hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver likes is happy",
+        "Q": "Who likes who?",
+        "A": "the driver likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver likes left",
+        "Q": "Who likes who?",
+        "A": "the driver likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver likes is glad",
+        "Q": "Who likes who?",
+        "A": "the driver likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver hates is happy",
+        "Q": "Who hates who?",
+        "A": "the driver hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver hates left",
+        "Q": "Who hates who?",
+        "A": "the driver hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver hates is glad",
+        "Q": "Who hates who?",
+        "A": "the driver hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver knows is happy",
+        "Q": "Who knows who?",
+        "A": "the driver knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver knows left",
+        "Q": "Who knows who?",
+        "A": "the driver knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the driver knows is glad",
+        "Q": "Who knows who?",
+        "A": "the driver knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl saw is happy",
+        "Q": "Who saw who?",
+        "A": "the girl saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl saw left",
+        "Q": "Who saw who?",
+        "A": "the girl saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl saw is glad",
+        "Q": "Who saw who?",
+        "A": "the girl saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl hit is happy",
+        "Q": "Who hit who?",
+        "A": "the girl hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl hit left",
+        "Q": "Who hit who?",
+        "A": "the girl hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl hit is glad",
+        "Q": "Who hit who?",
+        "A": "the girl hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl likes is happy",
+        "Q": "Who likes who?",
+        "A": "the girl likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl likes left",
+        "Q": "Who likes who?",
+        "A": "the girl likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl likes is glad",
+        "Q": "Who likes who?",
+        "A": "the girl likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl hates is happy",
+        "Q": "Who hates who?",
+        "A": "the girl hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl hates left",
+        "Q": "Who hates who?",
+        "A": "the girl hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl hates is glad",
+        "Q": "Who hates who?",
+        "A": "the girl hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl knows is happy",
+        "Q": "Who knows who?",
+        "A": "the girl knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl knows left",
+        "Q": "Who knows who?",
+        "A": "the girl knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the girl knows is glad",
+        "Q": "Who knows who?",
+        "A": "the girl knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man saw is happy",
+        "Q": "Who saw who?",
+        "A": "the man saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man saw left",
+        "Q": "Who saw who?",
+        "A": "the man saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man saw is glad",
+        "Q": "Who saw who?",
+        "A": "the man saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man hit is happy",
+        "Q": "Who hit who?",
+        "A": "the man hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man hit left",
+        "Q": "Who hit who?",
+        "A": "the man hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man hit is glad",
+        "Q": "Who hit who?",
+        "A": "the man hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man likes is happy",
+        "Q": "Who likes who?",
+        "A": "the man likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man likes left",
+        "Q": "Who likes who?",
+        "A": "the man likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man likes is glad",
+        "Q": "Who likes who?",
+        "A": "the man likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man hates is happy",
+        "Q": "Who hates who?",
+        "A": "the man hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man hates left",
+        "Q": "Who hates who?",
+        "A": "the man hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man hates is glad",
+        "Q": "Who hates who?",
+        "A": "the man hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man knows is happy",
+        "Q": "Who knows who?",
+        "A": "the man knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man knows left",
+        "Q": "Who knows who?",
+        "A": "the man knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the man knows is glad",
+        "Q": "Who knows who?",
+        "A": "the man knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman saw is happy",
+        "Q": "Who saw who?",
+        "A": "the woman saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman saw left",
+        "Q": "Who saw who?",
+        "A": "the woman saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman saw is glad",
+        "Q": "Who saw who?",
+        "A": "the woman saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman hit is happy",
+        "Q": "Who hit who?",
+        "A": "the woman hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman hit left",
+        "Q": "Who hit who?",
+        "A": "the woman hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman hit is glad",
+        "Q": "Who hit who?",
+        "A": "the woman hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman likes is happy",
+        "Q": "Who likes who?",
+        "A": "the woman likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman likes left",
+        "Q": "Who likes who?",
+        "A": "the woman likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman likes is glad",
+        "Q": "Who likes who?",
+        "A": "the woman likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman hates is happy",
+        "Q": "Who hates who?",
+        "A": "the woman hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman hates left",
+        "Q": "Who hates who?",
+        "A": "the woman hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman hates is glad",
+        "Q": "Who hates who?",
+        "A": "the woman hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman knows is happy",
+        "Q": "Who knows who?",
+        "A": "the woman knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman knows left",
+        "Q": "Who knows who?",
+        "A": "the woman knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the woman knows is glad",
+        "Q": "Who knows who?",
+        "A": "the woman knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy saw is happy",
+        "Q": "Who saw who?",
+        "A": "the boy saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy saw left",
+        "Q": "Who saw who?",
+        "A": "the boy saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy saw is glad",
+        "Q": "Who saw who?",
+        "A": "the boy saw the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy hit is happy",
+        "Q": "Who hit who?",
+        "A": "the boy hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy hit left",
+        "Q": "Who hit who?",
+        "A": "the boy hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy hit is glad",
+        "Q": "Who hit who?",
+        "A": "the boy hit the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy likes is happy",
+        "Q": "Who likes who?",
+        "A": "the boy likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy likes left",
+        "Q": "Who likes who?",
+        "A": "the boy likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy likes is glad",
+        "Q": "Who likes who?",
+        "A": "the boy likes the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy hates is happy",
+        "Q": "Who hates who?",
+        "A": "the boy hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy hates left",
+        "Q": "Who hates who?",
+        "A": "the boy hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy hates is glad",
+        "Q": "Who hates who?",
+        "A": "the boy hates the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy knows is happy",
+        "Q": "Who knows who?",
+        "A": "the boy knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy knows left",
+        "Q": "Who knows who?",
+        "A": "the boy knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The student the boy knows is glad",
+        "Q": "Who knows who?",
+        "A": "the boy knows the student.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher saw is happy",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher saw left",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher saw is glad",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher hit is happy",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher hit left",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher hit is glad",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher likes is happy",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher likes left",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher likes is glad",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher hates is happy",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher hates left",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher hates is glad",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher knows is happy",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher knows left",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the teacher knows is glad",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student saw is happy",
+        "Q": "Who saw who?",
+        "A": "the student saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student saw left",
+        "Q": "Who saw who?",
+        "A": "the student saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student saw is glad",
+        "Q": "Who saw who?",
+        "A": "the student saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student hit is happy",
+        "Q": "Who hit who?",
+        "A": "the student hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student hit left",
+        "Q": "Who hit who?",
+        "A": "the student hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student hit is glad",
+        "Q": "Who hit who?",
+        "A": "the student hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student likes is happy",
+        "Q": "Who likes who?",
+        "A": "the student likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student likes left",
+        "Q": "Who likes who?",
+        "A": "the student likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student likes is glad",
+        "Q": "Who likes who?",
+        "A": "the student likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student hates is happy",
+        "Q": "Who hates who?",
+        "A": "the student hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student hates left",
+        "Q": "Who hates who?",
+        "A": "the student hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student hates is glad",
+        "Q": "Who hates who?",
+        "A": "the student hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student knows is happy",
+        "Q": "Who knows who?",
+        "A": "the student knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student knows left",
+        "Q": "Who knows who?",
+        "A": "the student knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the student knows is glad",
+        "Q": "Who knows who?",
+        "A": "the student knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl saw is happy",
+        "Q": "Who saw who?",
+        "A": "the girl saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl saw left",
+        "Q": "Who saw who?",
+        "A": "the girl saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl saw is glad",
+        "Q": "Who saw who?",
+        "A": "the girl saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl hit is happy",
+        "Q": "Who hit who?",
+        "A": "the girl hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl hit left",
+        "Q": "Who hit who?",
+        "A": "the girl hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl hit is glad",
+        "Q": "Who hit who?",
+        "A": "the girl hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl likes is happy",
+        "Q": "Who likes who?",
+        "A": "the girl likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl likes left",
+        "Q": "Who likes who?",
+        "A": "the girl likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl likes is glad",
+        "Q": "Who likes who?",
+        "A": "the girl likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl hates is happy",
+        "Q": "Who hates who?",
+        "A": "the girl hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl hates left",
+        "Q": "Who hates who?",
+        "A": "the girl hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl hates is glad",
+        "Q": "Who hates who?",
+        "A": "the girl hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl knows is happy",
+        "Q": "Who knows who?",
+        "A": "the girl knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl knows left",
+        "Q": "Who knows who?",
+        "A": "the girl knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the girl knows is glad",
+        "Q": "Who knows who?",
+        "A": "the girl knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man saw is happy",
+        "Q": "Who saw who?",
+        "A": "the man saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man saw left",
+        "Q": "Who saw who?",
+        "A": "the man saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man saw is glad",
+        "Q": "Who saw who?",
+        "A": "the man saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man hit is happy",
+        "Q": "Who hit who?",
+        "A": "the man hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man hit left",
+        "Q": "Who hit who?",
+        "A": "the man hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man hit is glad",
+        "Q": "Who hit who?",
+        "A": "the man hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man likes is happy",
+        "Q": "Who likes who?",
+        "A": "the man likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man likes left",
+        "Q": "Who likes who?",
+        "A": "the man likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man likes is glad",
+        "Q": "Who likes who?",
+        "A": "the man likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man hates is happy",
+        "Q": "Who hates who?",
+        "A": "the man hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man hates left",
+        "Q": "Who hates who?",
+        "A": "the man hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man hates is glad",
+        "Q": "Who hates who?",
+        "A": "the man hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man knows is happy",
+        "Q": "Who knows who?",
+        "A": "the man knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man knows left",
+        "Q": "Who knows who?",
+        "A": "the man knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the man knows is glad",
+        "Q": "Who knows who?",
+        "A": "the man knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman saw is happy",
+        "Q": "Who saw who?",
+        "A": "the woman saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman saw left",
+        "Q": "Who saw who?",
+        "A": "the woman saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman saw is glad",
+        "Q": "Who saw who?",
+        "A": "the woman saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman hit is happy",
+        "Q": "Who hit who?",
+        "A": "the woman hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman hit left",
+        "Q": "Who hit who?",
+        "A": "the woman hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman hit is glad",
+        "Q": "Who hit who?",
+        "A": "the woman hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman likes is happy",
+        "Q": "Who likes who?",
+        "A": "the woman likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman likes left",
+        "Q": "Who likes who?",
+        "A": "the woman likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman likes is glad",
+        "Q": "Who likes who?",
+        "A": "the woman likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman hates is happy",
+        "Q": "Who hates who?",
+        "A": "the woman hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman hates left",
+        "Q": "Who hates who?",
+        "A": "the woman hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman hates is glad",
+        "Q": "Who hates who?",
+        "A": "the woman hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman knows is happy",
+        "Q": "Who knows who?",
+        "A": "the woman knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman knows left",
+        "Q": "Who knows who?",
+        "A": "the woman knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the woman knows is glad",
+        "Q": "Who knows who?",
+        "A": "the woman knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy saw is happy",
+        "Q": "Who saw who?",
+        "A": "the boy saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy saw left",
+        "Q": "Who saw who?",
+        "A": "the boy saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy saw is glad",
+        "Q": "Who saw who?",
+        "A": "the boy saw the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy hit is happy",
+        "Q": "Who hit who?",
+        "A": "the boy hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy hit left",
+        "Q": "Who hit who?",
+        "A": "the boy hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy hit is glad",
+        "Q": "Who hit who?",
+        "A": "the boy hit the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy likes is happy",
+        "Q": "Who likes who?",
+        "A": "the boy likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy likes left",
+        "Q": "Who likes who?",
+        "A": "the boy likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy likes is glad",
+        "Q": "Who likes who?",
+        "A": "the boy likes the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy hates is happy",
+        "Q": "Who hates who?",
+        "A": "the boy hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy hates left",
+        "Q": "Who hates who?",
+        "A": "the boy hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy hates is glad",
+        "Q": "Who hates who?",
+        "A": "the boy hates the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy knows is happy",
+        "Q": "Who knows who?",
+        "A": "the boy knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy knows left",
+        "Q": "Who knows who?",
+        "A": "the boy knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The driver the boy knows is glad",
+        "Q": "Who knows who?",
+        "A": "the boy knows the driver.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher saw is happy",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher saw left",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher saw is glad",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher hit is happy",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher hit left",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher hit is glad",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher likes is happy",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher likes left",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher likes is glad",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher hates is happy",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher hates left",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher hates is glad",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher knows is happy",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher knows left",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the teacher knows is glad",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student saw is happy",
+        "Q": "Who saw who?",
+        "A": "the student saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student saw left",
+        "Q": "Who saw who?",
+        "A": "the student saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student saw is glad",
+        "Q": "Who saw who?",
+        "A": "the student saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student hit is happy",
+        "Q": "Who hit who?",
+        "A": "the student hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student hit left",
+        "Q": "Who hit who?",
+        "A": "the student hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student hit is glad",
+        "Q": "Who hit who?",
+        "A": "the student hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student likes is happy",
+        "Q": "Who likes who?",
+        "A": "the student likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student likes left",
+        "Q": "Who likes who?",
+        "A": "the student likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student likes is glad",
+        "Q": "Who likes who?",
+        "A": "the student likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student hates is happy",
+        "Q": "Who hates who?",
+        "A": "the student hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student hates left",
+        "Q": "Who hates who?",
+        "A": "the student hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student hates is glad",
+        "Q": "Who hates who?",
+        "A": "the student hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student knows is happy",
+        "Q": "Who knows who?",
+        "A": "the student knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student knows left",
+        "Q": "Who knows who?",
+        "A": "the student knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the student knows is glad",
+        "Q": "Who knows who?",
+        "A": "the student knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver saw is happy",
+        "Q": "Who saw who?",
+        "A": "the driver saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver saw left",
+        "Q": "Who saw who?",
+        "A": "the driver saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver saw is glad",
+        "Q": "Who saw who?",
+        "A": "the driver saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver hit is happy",
+        "Q": "Who hit who?",
+        "A": "the driver hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver hit left",
+        "Q": "Who hit who?",
+        "A": "the driver hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver hit is glad",
+        "Q": "Who hit who?",
+        "A": "the driver hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver likes is happy",
+        "Q": "Who likes who?",
+        "A": "the driver likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver likes left",
+        "Q": "Who likes who?",
+        "A": "the driver likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver likes is glad",
+        "Q": "Who likes who?",
+        "A": "the driver likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver hates is happy",
+        "Q": "Who hates who?",
+        "A": "the driver hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver hates left",
+        "Q": "Who hates who?",
+        "A": "the driver hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver hates is glad",
+        "Q": "Who hates who?",
+        "A": "the driver hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver knows is happy",
+        "Q": "Who knows who?",
+        "A": "the driver knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver knows left",
+        "Q": "Who knows who?",
+        "A": "the driver knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the driver knows is glad",
+        "Q": "Who knows who?",
+        "A": "the driver knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man saw is happy",
+        "Q": "Who saw who?",
+        "A": "the man saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man saw left",
+        "Q": "Who saw who?",
+        "A": "the man saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man saw is glad",
+        "Q": "Who saw who?",
+        "A": "the man saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man hit is happy",
+        "Q": "Who hit who?",
+        "A": "the man hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man hit left",
+        "Q": "Who hit who?",
+        "A": "the man hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man hit is glad",
+        "Q": "Who hit who?",
+        "A": "the man hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man likes is happy",
+        "Q": "Who likes who?",
+        "A": "the man likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man likes left",
+        "Q": "Who likes who?",
+        "A": "the man likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man likes is glad",
+        "Q": "Who likes who?",
+        "A": "the man likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man hates is happy",
+        "Q": "Who hates who?",
+        "A": "the man hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man hates left",
+        "Q": "Who hates who?",
+        "A": "the man hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man hates is glad",
+        "Q": "Who hates who?",
+        "A": "the man hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man knows is happy",
+        "Q": "Who knows who?",
+        "A": "the man knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man knows left",
+        "Q": "Who knows who?",
+        "A": "the man knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the man knows is glad",
+        "Q": "Who knows who?",
+        "A": "the man knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman saw is happy",
+        "Q": "Who saw who?",
+        "A": "the woman saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman saw left",
+        "Q": "Who saw who?",
+        "A": "the woman saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman saw is glad",
+        "Q": "Who saw who?",
+        "A": "the woman saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman hit is happy",
+        "Q": "Who hit who?",
+        "A": "the woman hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman hit left",
+        "Q": "Who hit who?",
+        "A": "the woman hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman hit is glad",
+        "Q": "Who hit who?",
+        "A": "the woman hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman likes is happy",
+        "Q": "Who likes who?",
+        "A": "the woman likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman likes left",
+        "Q": "Who likes who?",
+        "A": "the woman likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman likes is glad",
+        "Q": "Who likes who?",
+        "A": "the woman likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman hates is happy",
+        "Q": "Who hates who?",
+        "A": "the woman hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman hates left",
+        "Q": "Who hates who?",
+        "A": "the woman hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman hates is glad",
+        "Q": "Who hates who?",
+        "A": "the woman hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman knows is happy",
+        "Q": "Who knows who?",
+        "A": "the woman knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman knows left",
+        "Q": "Who knows who?",
+        "A": "the woman knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the woman knows is glad",
+        "Q": "Who knows who?",
+        "A": "the woman knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy saw is happy",
+        "Q": "Who saw who?",
+        "A": "the boy saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy saw left",
+        "Q": "Who saw who?",
+        "A": "the boy saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy saw is glad",
+        "Q": "Who saw who?",
+        "A": "the boy saw the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy hit is happy",
+        "Q": "Who hit who?",
+        "A": "the boy hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy hit left",
+        "Q": "Who hit who?",
+        "A": "the boy hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy hit is glad",
+        "Q": "Who hit who?",
+        "A": "the boy hit the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy likes is happy",
+        "Q": "Who likes who?",
+        "A": "the boy likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy likes left",
+        "Q": "Who likes who?",
+        "A": "the boy likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy likes is glad",
+        "Q": "Who likes who?",
+        "A": "the boy likes the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy hates is happy",
+        "Q": "Who hates who?",
+        "A": "the boy hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy hates left",
+        "Q": "Who hates who?",
+        "A": "the boy hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy hates is glad",
+        "Q": "Who hates who?",
+        "A": "the boy hates the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy knows is happy",
+        "Q": "Who knows who?",
+        "A": "the boy knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy knows left",
+        "Q": "Who knows who?",
+        "A": "the boy knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The girl the boy knows is glad",
+        "Q": "Who knows who?",
+        "A": "the boy knows the girl.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher saw is happy",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher saw left",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher saw is glad",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher hit is happy",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher hit left",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher hit is glad",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher likes is happy",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher likes left",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher likes is glad",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher hates is happy",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher hates left",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher hates is glad",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher knows is happy",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher knows left",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the teacher knows is glad",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student saw is happy",
+        "Q": "Who saw who?",
+        "A": "the student saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student saw left",
+        "Q": "Who saw who?",
+        "A": "the student saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student saw is glad",
+        "Q": "Who saw who?",
+        "A": "the student saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student hit is happy",
+        "Q": "Who hit who?",
+        "A": "the student hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student hit left",
+        "Q": "Who hit who?",
+        "A": "the student hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student hit is glad",
+        "Q": "Who hit who?",
+        "A": "the student hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student likes is happy",
+        "Q": "Who likes who?",
+        "A": "the student likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student likes left",
+        "Q": "Who likes who?",
+        "A": "the student likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student likes is glad",
+        "Q": "Who likes who?",
+        "A": "the student likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student hates is happy",
+        "Q": "Who hates who?",
+        "A": "the student hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student hates left",
+        "Q": "Who hates who?",
+        "A": "the student hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student hates is glad",
+        "Q": "Who hates who?",
+        "A": "the student hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student knows is happy",
+        "Q": "Who knows who?",
+        "A": "the student knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student knows left",
+        "Q": "Who knows who?",
+        "A": "the student knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the student knows is glad",
+        "Q": "Who knows who?",
+        "A": "the student knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver saw is happy",
+        "Q": "Who saw who?",
+        "A": "the driver saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver saw left",
+        "Q": "Who saw who?",
+        "A": "the driver saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver saw is glad",
+        "Q": "Who saw who?",
+        "A": "the driver saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver hit is happy",
+        "Q": "Who hit who?",
+        "A": "the driver hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver hit left",
+        "Q": "Who hit who?",
+        "A": "the driver hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver hit is glad",
+        "Q": "Who hit who?",
+        "A": "the driver hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver likes is happy",
+        "Q": "Who likes who?",
+        "A": "the driver likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver likes left",
+        "Q": "Who likes who?",
+        "A": "the driver likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver likes is glad",
+        "Q": "Who likes who?",
+        "A": "the driver likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver hates is happy",
+        "Q": "Who hates who?",
+        "A": "the driver hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver hates left",
+        "Q": "Who hates who?",
+        "A": "the driver hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver hates is glad",
+        "Q": "Who hates who?",
+        "A": "the driver hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver knows is happy",
+        "Q": "Who knows who?",
+        "A": "the driver knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver knows left",
+        "Q": "Who knows who?",
+        "A": "the driver knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the driver knows is glad",
+        "Q": "Who knows who?",
+        "A": "the driver knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl saw is happy",
+        "Q": "Who saw who?",
+        "A": "the girl saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl saw left",
+        "Q": "Who saw who?",
+        "A": "the girl saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl saw is glad",
+        "Q": "Who saw who?",
+        "A": "the girl saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl hit is happy",
+        "Q": "Who hit who?",
+        "A": "the girl hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl hit left",
+        "Q": "Who hit who?",
+        "A": "the girl hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl hit is glad",
+        "Q": "Who hit who?",
+        "A": "the girl hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl likes is happy",
+        "Q": "Who likes who?",
+        "A": "the girl likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl likes left",
+        "Q": "Who likes who?",
+        "A": "the girl likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl likes is glad",
+        "Q": "Who likes who?",
+        "A": "the girl likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl hates is happy",
+        "Q": "Who hates who?",
+        "A": "the girl hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl hates left",
+        "Q": "Who hates who?",
+        "A": "the girl hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl hates is glad",
+        "Q": "Who hates who?",
+        "A": "the girl hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl knows is happy",
+        "Q": "Who knows who?",
+        "A": "the girl knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl knows left",
+        "Q": "Who knows who?",
+        "A": "the girl knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the girl knows is glad",
+        "Q": "Who knows who?",
+        "A": "the girl knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman saw is happy",
+        "Q": "Who saw who?",
+        "A": "the woman saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman saw left",
+        "Q": "Who saw who?",
+        "A": "the woman saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman saw is glad",
+        "Q": "Who saw who?",
+        "A": "the woman saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman hit is happy",
+        "Q": "Who hit who?",
+        "A": "the woman hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman hit left",
+        "Q": "Who hit who?",
+        "A": "the woman hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman hit is glad",
+        "Q": "Who hit who?",
+        "A": "the woman hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman likes is happy",
+        "Q": "Who likes who?",
+        "A": "the woman likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman likes left",
+        "Q": "Who likes who?",
+        "A": "the woman likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman likes is glad",
+        "Q": "Who likes who?",
+        "A": "the woman likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman hates is happy",
+        "Q": "Who hates who?",
+        "A": "the woman hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman hates left",
+        "Q": "Who hates who?",
+        "A": "the woman hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman hates is glad",
+        "Q": "Who hates who?",
+        "A": "the woman hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman knows is happy",
+        "Q": "Who knows who?",
+        "A": "the woman knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman knows left",
+        "Q": "Who knows who?",
+        "A": "the woman knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the woman knows is glad",
+        "Q": "Who knows who?",
+        "A": "the woman knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy saw is happy",
+        "Q": "Who saw who?",
+        "A": "the boy saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy saw left",
+        "Q": "Who saw who?",
+        "A": "the boy saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy saw is glad",
+        "Q": "Who saw who?",
+        "A": "the boy saw the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy hit is happy",
+        "Q": "Who hit who?",
+        "A": "the boy hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy hit left",
+        "Q": "Who hit who?",
+        "A": "the boy hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy hit is glad",
+        "Q": "Who hit who?",
+        "A": "the boy hit the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy likes is happy",
+        "Q": "Who likes who?",
+        "A": "the boy likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy likes left",
+        "Q": "Who likes who?",
+        "A": "the boy likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy likes is glad",
+        "Q": "Who likes who?",
+        "A": "the boy likes the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy hates is happy",
+        "Q": "Who hates who?",
+        "A": "the boy hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy hates left",
+        "Q": "Who hates who?",
+        "A": "the boy hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy hates is glad",
+        "Q": "Who hates who?",
+        "A": "the boy hates the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy knows is happy",
+        "Q": "Who knows who?",
+        "A": "the boy knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy knows left",
+        "Q": "Who knows who?",
+        "A": "the boy knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The man the boy knows is glad",
+        "Q": "Who knows who?",
+        "A": "the boy knows the man.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher saw is happy",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher saw left",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher saw is glad",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher hit is happy",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher hit left",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher hit is glad",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher likes is happy",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher likes left",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher likes is glad",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher hates is happy",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher hates left",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher hates is glad",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher knows is happy",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher knows left",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the teacher knows is glad",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student saw is happy",
+        "Q": "Who saw who?",
+        "A": "the student saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student saw left",
+        "Q": "Who saw who?",
+        "A": "the student saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student saw is glad",
+        "Q": "Who saw who?",
+        "A": "the student saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student hit is happy",
+        "Q": "Who hit who?",
+        "A": "the student hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student hit left",
+        "Q": "Who hit who?",
+        "A": "the student hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student hit is glad",
+        "Q": "Who hit who?",
+        "A": "the student hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student likes is happy",
+        "Q": "Who likes who?",
+        "A": "the student likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student likes left",
+        "Q": "Who likes who?",
+        "A": "the student likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student likes is glad",
+        "Q": "Who likes who?",
+        "A": "the student likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student hates is happy",
+        "Q": "Who hates who?",
+        "A": "the student hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student hates left",
+        "Q": "Who hates who?",
+        "A": "the student hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student hates is glad",
+        "Q": "Who hates who?",
+        "A": "the student hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student knows is happy",
+        "Q": "Who knows who?",
+        "A": "the student knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student knows left",
+        "Q": "Who knows who?",
+        "A": "the student knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the student knows is glad",
+        "Q": "Who knows who?",
+        "A": "the student knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver saw is happy",
+        "Q": "Who saw who?",
+        "A": "the driver saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver saw left",
+        "Q": "Who saw who?",
+        "A": "the driver saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver saw is glad",
+        "Q": "Who saw who?",
+        "A": "the driver saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver hit is happy",
+        "Q": "Who hit who?",
+        "A": "the driver hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver hit left",
+        "Q": "Who hit who?",
+        "A": "the driver hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver hit is glad",
+        "Q": "Who hit who?",
+        "A": "the driver hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver likes is happy",
+        "Q": "Who likes who?",
+        "A": "the driver likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver likes left",
+        "Q": "Who likes who?",
+        "A": "the driver likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver likes is glad",
+        "Q": "Who likes who?",
+        "A": "the driver likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver hates is happy",
+        "Q": "Who hates who?",
+        "A": "the driver hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver hates left",
+        "Q": "Who hates who?",
+        "A": "the driver hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver hates is glad",
+        "Q": "Who hates who?",
+        "A": "the driver hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver knows is happy",
+        "Q": "Who knows who?",
+        "A": "the driver knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver knows left",
+        "Q": "Who knows who?",
+        "A": "the driver knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the driver knows is glad",
+        "Q": "Who knows who?",
+        "A": "the driver knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl saw is happy",
+        "Q": "Who saw who?",
+        "A": "the girl saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl saw left",
+        "Q": "Who saw who?",
+        "A": "the girl saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl saw is glad",
+        "Q": "Who saw who?",
+        "A": "the girl saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl hit is happy",
+        "Q": "Who hit who?",
+        "A": "the girl hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl hit left",
+        "Q": "Who hit who?",
+        "A": "the girl hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl hit is glad",
+        "Q": "Who hit who?",
+        "A": "the girl hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl likes is happy",
+        "Q": "Who likes who?",
+        "A": "the girl likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl likes left",
+        "Q": "Who likes who?",
+        "A": "the girl likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl likes is glad",
+        "Q": "Who likes who?",
+        "A": "the girl likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl hates is happy",
+        "Q": "Who hates who?",
+        "A": "the girl hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl hates left",
+        "Q": "Who hates who?",
+        "A": "the girl hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl hates is glad",
+        "Q": "Who hates who?",
+        "A": "the girl hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl knows is happy",
+        "Q": "Who knows who?",
+        "A": "the girl knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl knows left",
+        "Q": "Who knows who?",
+        "A": "the girl knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the girl knows is glad",
+        "Q": "Who knows who?",
+        "A": "the girl knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man saw is happy",
+        "Q": "Who saw who?",
+        "A": "the man saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man saw left",
+        "Q": "Who saw who?",
+        "A": "the man saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man saw is glad",
+        "Q": "Who saw who?",
+        "A": "the man saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man hit is happy",
+        "Q": "Who hit who?",
+        "A": "the man hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man hit left",
+        "Q": "Who hit who?",
+        "A": "the man hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man hit is glad",
+        "Q": "Who hit who?",
+        "A": "the man hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man likes is happy",
+        "Q": "Who likes who?",
+        "A": "the man likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man likes left",
+        "Q": "Who likes who?",
+        "A": "the man likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man likes is glad",
+        "Q": "Who likes who?",
+        "A": "the man likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man hates is happy",
+        "Q": "Who hates who?",
+        "A": "the man hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man hates left",
+        "Q": "Who hates who?",
+        "A": "the man hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man hates is glad",
+        "Q": "Who hates who?",
+        "A": "the man hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man knows is happy",
+        "Q": "Who knows who?",
+        "A": "the man knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man knows left",
+        "Q": "Who knows who?",
+        "A": "the man knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the man knows is glad",
+        "Q": "Who knows who?",
+        "A": "the man knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy saw is happy",
+        "Q": "Who saw who?",
+        "A": "the boy saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy saw left",
+        "Q": "Who saw who?",
+        "A": "the boy saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy saw is glad",
+        "Q": "Who saw who?",
+        "A": "the boy saw the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy hit is happy",
+        "Q": "Who hit who?",
+        "A": "the boy hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy hit left",
+        "Q": "Who hit who?",
+        "A": "the boy hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy hit is glad",
+        "Q": "Who hit who?",
+        "A": "the boy hit the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy likes is happy",
+        "Q": "Who likes who?",
+        "A": "the boy likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy likes left",
+        "Q": "Who likes who?",
+        "A": "the boy likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy likes is glad",
+        "Q": "Who likes who?",
+        "A": "the boy likes the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy hates is happy",
+        "Q": "Who hates who?",
+        "A": "the boy hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy hates left",
+        "Q": "Who hates who?",
+        "A": "the boy hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy hates is glad",
+        "Q": "Who hates who?",
+        "A": "the boy hates the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy knows is happy",
+        "Q": "Who knows who?",
+        "A": "the boy knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy knows left",
+        "Q": "Who knows who?",
+        "A": "the boy knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The woman the boy knows is glad",
+        "Q": "Who knows who?",
+        "A": "the boy knows the woman.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher saw is happy",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher saw left",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher saw is glad",
+        "Q": "Who saw who?",
+        "A": "the teacher saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher hit is happy",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher hit left",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher hit is glad",
+        "Q": "Who hit who?",
+        "A": "the teacher hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher likes is happy",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher likes left",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher likes is glad",
+        "Q": "Who likes who?",
+        "A": "the teacher likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher hates is happy",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher hates left",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher hates is glad",
+        "Q": "Who hates who?",
+        "A": "the teacher hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher knows is happy",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher knows left",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the teacher knows is glad",
+        "Q": "Who knows who?",
+        "A": "the teacher knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student saw is happy",
+        "Q": "Who saw who?",
+        "A": "the student saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student saw left",
+        "Q": "Who saw who?",
+        "A": "the student saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student saw is glad",
+        "Q": "Who saw who?",
+        "A": "the student saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student hit is happy",
+        "Q": "Who hit who?",
+        "A": "the student hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student hit left",
+        "Q": "Who hit who?",
+        "A": "the student hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student hit is glad",
+        "Q": "Who hit who?",
+        "A": "the student hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student likes is happy",
+        "Q": "Who likes who?",
+        "A": "the student likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student likes left",
+        "Q": "Who likes who?",
+        "A": "the student likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student likes is glad",
+        "Q": "Who likes who?",
+        "A": "the student likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student hates is happy",
+        "Q": "Who hates who?",
+        "A": "the student hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student hates left",
+        "Q": "Who hates who?",
+        "A": "the student hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student hates is glad",
+        "Q": "Who hates who?",
+        "A": "the student hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student knows is happy",
+        "Q": "Who knows who?",
+        "A": "the student knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student knows left",
+        "Q": "Who knows who?",
+        "A": "the student knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the student knows is glad",
+        "Q": "Who knows who?",
+        "A": "the student knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver saw is happy",
+        "Q": "Who saw who?",
+        "A": "the driver saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver saw left",
+        "Q": "Who saw who?",
+        "A": "the driver saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver saw is glad",
+        "Q": "Who saw who?",
+        "A": "the driver saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver hit is happy",
+        "Q": "Who hit who?",
+        "A": "the driver hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver hit left",
+        "Q": "Who hit who?",
+        "A": "the driver hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver hit is glad",
+        "Q": "Who hit who?",
+        "A": "the driver hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver likes is happy",
+        "Q": "Who likes who?",
+        "A": "the driver likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver likes left",
+        "Q": "Who likes who?",
+        "A": "the driver likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver likes is glad",
+        "Q": "Who likes who?",
+        "A": "the driver likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver hates is happy",
+        "Q": "Who hates who?",
+        "A": "the driver hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver hates left",
+        "Q": "Who hates who?",
+        "A": "the driver hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver hates is glad",
+        "Q": "Who hates who?",
+        "A": "the driver hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver knows is happy",
+        "Q": "Who knows who?",
+        "A": "the driver knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver knows left",
+        "Q": "Who knows who?",
+        "A": "the driver knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the driver knows is glad",
+        "Q": "Who knows who?",
+        "A": "the driver knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl saw is happy",
+        "Q": "Who saw who?",
+        "A": "the girl saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl saw left",
+        "Q": "Who saw who?",
+        "A": "the girl saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl saw is glad",
+        "Q": "Who saw who?",
+        "A": "the girl saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl hit is happy",
+        "Q": "Who hit who?",
+        "A": "the girl hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl hit left",
+        "Q": "Who hit who?",
+        "A": "the girl hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl hit is glad",
+        "Q": "Who hit who?",
+        "A": "the girl hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl likes is happy",
+        "Q": "Who likes who?",
+        "A": "the girl likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl likes left",
+        "Q": "Who likes who?",
+        "A": "the girl likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl likes is glad",
+        "Q": "Who likes who?",
+        "A": "the girl likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl hates is happy",
+        "Q": "Who hates who?",
+        "A": "the girl hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl hates left",
+        "Q": "Who hates who?",
+        "A": "the girl hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl hates is glad",
+        "Q": "Who hates who?",
+        "A": "the girl hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl knows is happy",
+        "Q": "Who knows who?",
+        "A": "the girl knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl knows left",
+        "Q": "Who knows who?",
+        "A": "the girl knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the girl knows is glad",
+        "Q": "Who knows who?",
+        "A": "the girl knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man saw is happy",
+        "Q": "Who saw who?",
+        "A": "the man saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man saw left",
+        "Q": "Who saw who?",
+        "A": "the man saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man saw is glad",
+        "Q": "Who saw who?",
+        "A": "the man saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man hit is happy",
+        "Q": "Who hit who?",
+        "A": "the man hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man hit left",
+        "Q": "Who hit who?",
+        "A": "the man hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man hit is glad",
+        "Q": "Who hit who?",
+        "A": "the man hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man likes is happy",
+        "Q": "Who likes who?",
+        "A": "the man likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man likes left",
+        "Q": "Who likes who?",
+        "A": "the man likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man likes is glad",
+        "Q": "Who likes who?",
+        "A": "the man likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man hates is happy",
+        "Q": "Who hates who?",
+        "A": "the man hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man hates left",
+        "Q": "Who hates who?",
+        "A": "the man hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man hates is glad",
+        "Q": "Who hates who?",
+        "A": "the man hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man knows is happy",
+        "Q": "Who knows who?",
+        "A": "the man knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man knows left",
+        "Q": "Who knows who?",
+        "A": "the man knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the man knows is glad",
+        "Q": "Who knows who?",
+        "A": "the man knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman saw is happy",
+        "Q": "Who saw who?",
+        "A": "the woman saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman saw left",
+        "Q": "Who saw who?",
+        "A": "the woman saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman saw is glad",
+        "Q": "Who saw who?",
+        "A": "the woman saw the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman hit is happy",
+        "Q": "Who hit who?",
+        "A": "the woman hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman hit left",
+        "Q": "Who hit who?",
+        "A": "the woman hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman hit is glad",
+        "Q": "Who hit who?",
+        "A": "the woman hit the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman likes is happy",
+        "Q": "Who likes who?",
+        "A": "the woman likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman likes left",
+        "Q": "Who likes who?",
+        "A": "the woman likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman likes is glad",
+        "Q": "Who likes who?",
+        "A": "the woman likes the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman hates is happy",
+        "Q": "Who hates who?",
+        "A": "the woman hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman hates left",
+        "Q": "Who hates who?",
+        "A": "the woman hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman hates is glad",
+        "Q": "Who hates who?",
+        "A": "the woman hates the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman knows is happy",
+        "Q": "Who knows who?",
+        "A": "the woman knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman knows left",
+        "Q": "Who knows who?",
+        "A": "the woman knows the boy.",
+        "level": "1"
+    },
+    {
+        "Context": "The boy the woman knows is glad",
+        "Q": "Who knows who?",
+        "A": "the woman knows the boy.",
+        "level": "1"
+    }
+]
