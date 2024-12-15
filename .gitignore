@@ -168,3 +168,10 @@ centerembed/
 centerembed
 config.cfg
 results/*/predictions.dat
+log*
+
+nohup.out
+# emacs backups
+*~
+
+data/ce4.json
