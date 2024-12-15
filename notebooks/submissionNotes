@@ -1,0 +1,76 @@
+For test4 VP illusion
+
+Tune 10 (l2)
+egrep 'No,Yes,False' predictions.dat |wc -l
+18
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill1_N200_Tn10_05-12-24-14-24$ egrep 'Yes,Yes,True' predictions.dat |wc -l
+81
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill1_N200_Tn10_05-12-24-14-24$ egrep 'Yes,No,False' predictions.dat |wc -l
+15
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill1_N200_Tn10_05-12-24-14-24$ egrep 'No,No,True' predictions.dat |wc -l
+81
+
+egrep '3.json.*No,Yes,False' predictions.dat |wc -l
+29
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill3-4_N200_Tn10_05-12-24-14-36$ egrep '3.json.*Yes,Yes,True' predictions.dat |wc -l
+64
+li) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill3-4_N200_Tn10_05-12-24-14-36$ egrep '4.json.*No,Yes,False' predictions.dat |wc -l
+38
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill3-4_N200_Tn10_05-12-24-14-36$ egrep '4.json.*Yes,Yes,True' predictions.dat |wc -l
+49
+
+l2 Precision: (/ 81 (+ 18 81.0))  = 0.818
+l3 Precision: (/ 64 (+ 64 29.0))  = 0.688
+l4 Precision: (/ 49 (+ 49 38.0))  = 0.563
+
+Tune 5 (l2-4)
+egrep 'No,Yes,False' predictions.dat |wc -l
+291
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn5_05-12-24-14-44$ egrep 'Yes,Yes,True' predictions.dat |wc -l
+287
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn5_05-12-24-14-44$ egrep 'Yes,No,False' predictions.dat |wc -l
+15
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn5_05-12-24-14-44$ egrep 'No,No,True' predictions.dat |wc -l
+7
+egrep '2.json.*Yes,Yes,True' predictions.dat |wc -l
+97
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn5_05-12-24-14-44$ egrep '2.json.*No,Yes,False' predictions.dat |wc -l
+103
+
+egrep '3.json.*No,Yes,False' predictions.dat |wc -l
+86
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn5_05-12-24-14-44$ egrep '3.json.*Yes,Yes,True' predictions.dat |wc -l
+100
+
+i) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn5_05-12-24-14-44$ egrep '4.json.*Yes,Yes,True' predictions.dat |wc -l
+90
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn5_05-12-24-14-44$ egrep '4.json.*No,Yes,False' predictions.dat |wc -l
+102
+
+
+l2 Precision: (/ 97 (+ 97 103.0))  = 0.485
+l3 Precision: (/ 100 (+ 100 86.0))  = 0.537
+l3 Precision: (/ 90 (+ 90 102.0))  = 0.469
+
+
+
+Tune 0 
+
+egrep '2.json.*Yes,Yes,True' predictions.dat |wc -l
+67
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn0_05-12-24-14-56$ egrep '2.json.*No,Yes,False' predictions.dat |wc -l
+85
+
+egrep '3.json.*Yes,Yes,True' predictions.dat |wc -l
+6
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn0_05-12-24-14-56$ egrep '3.json.*No,Yes,False' predictions.dat |wc -l
+16
+
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn0_05-12-24-14-56$ egrep '4.json.*No,Yes,False' predictions.dat |wc -l
+0
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ceVPill2-4_N200_Tn0_05-12-24-14-56$ egrep '4.json.*Yes,Yes,True' predictions.dat |wc -l
+0
+
+l2 Precision: (/ 67 (+ 67 85.0))  = 0.440
+l3 Precision: (/ 6 (+ 6 16.0))  = 0.272
+l4 Precision: 0
