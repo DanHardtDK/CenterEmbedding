@@ -18,6 +18,7 @@ class Args(BaseModel):
         description="Path for txt containing list of files to test against",
     )
     model: Optional[str] = Field(default=None, description="LLM to test")
+    answerForm: Optional[str] = Field(default=None, description="form of answer")    
     sample_n: int = Field(
         default=10, description="number of examples to test", gt=0, lt=10_000
     )

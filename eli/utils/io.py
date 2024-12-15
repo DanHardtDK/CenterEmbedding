@@ -5,11 +5,11 @@ from pathlib import Path
 
 SUMMARY_COLUMNS = [
     "model",
-    "file_list",
-    "example_file",
     "sample_n",
     "tuning_n",
     "seed",
+    "file_list",
+    "example_file",
     "correct_true_count",
     "correct_true_fraction",
     "exact_match_true_count",

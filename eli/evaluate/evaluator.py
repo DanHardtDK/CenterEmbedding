@@ -16,7 +16,7 @@ class Evaluator(Evaluation):
         self,
         model: Union[Callable, Model],
         return_rows: bool = False,
-        workers: int = get_weave_parallelism(),
+        workers: int = 1
     ) -> dict | tuple[dict, list]:
         async def eval_example(example: dict) -> dict:
             # Function that processes each example
