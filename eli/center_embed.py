@@ -18,6 +18,10 @@ def run() -> None:
 
     weave.init(ARGS.EXP_NAME)  # Initialize weave experiment
 
+    answerForm = "DEFAULT"
+    if (ARGS.answerForm == "YN"):
+        answerForm = "YN"
+        
     # Load files
     files = io.load_files(ARGS.files)
     for examples_file, examples in files:
@@ -27,13 +31,17 @@ def run() -> None:
         # Sample examples
         sample_size = ARGS.sample_n + ARGS.tuning_n
         sampled_examples: list = random.sample(formatted_examples, sample_size)
-        tuning_examples = sampled_examples[:ARGS.tuning_n]
-        test_examples = sampled_examples[ARGS.tuning_n:]
+        # tuning_examples = sampled_examples[:ARGS.tuning_n]
+        # test_examples = sampled_examples[ARGS.tuning_n:]
+
+        tuning_examples = random.sample(sampled_examples, ARGS.tuning_n)
+        test_examples = [ex for ex in sampled_examples if ex not in tuning_examples]
+
         # Initialize Weave model object from
         # the model registry and the prompt template
         model = MODEL_REGISTRY[ARGS.model](
             model_name=ARGS.model,
-            prompt_template=format_prompt(tuning_examples)
+            prompt_template=format_prompt(tuning_examples, answerForm)
                                     )
         
         # Initialize evaluation
