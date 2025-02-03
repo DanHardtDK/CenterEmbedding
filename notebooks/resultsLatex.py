@@ -28,10 +28,10 @@ def generate_latex_table(filespec):
     # Ensure example_file is a string before processing
     all_data['example_file'] = all_data['example_file'].astype(str)
     import pdb
-    pdb.set_trace()
+#    pdb.set_trace()
     # Extract the level from the example_file column (e.g., 'ce22.json' -> '2')
     all_data['Level'] = all_data['example_file'].str.extract(r'(\d).json')
-    pdb.set_trace()
+#    pdb.set_trace()
     
     # Group by model, tuning_n, and levels, and select the correct_true_fraction
     pivot_table = all_data.pivot_table(
@@ -56,7 +56,8 @@ def generate_latex_table(filespec):
 
 
 # Example usage:
-filespec = "../results/gpt-4_ceVPill*N200*"  # Replace with your desired pattern
+
+filespec = "../results/*_15-12-24*"  # Replace with your desired pattern
 
 
 try:

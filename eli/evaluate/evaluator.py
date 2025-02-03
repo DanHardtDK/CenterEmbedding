@@ -50,10 +50,15 @@ class Evaluator(Evaluation):
                 scorer_name, _, _ = get_scorer_attributes(scorer)
                 if scorer_name not in eval_row["scores"]:
                     eval_row["scores"][scorer_name] = {}
-
+            print("adding row")
+            print(eval_row)
             eval_rows.append(eval_row)
 
         # Summarize the results after all rows have been evaluated
+
+#        import pdb
+#        pdb.set_trace()
+        
         summary = await self.summarize(eval_rows)
         if return_rows:
             return summary, eval_rows
