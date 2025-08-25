@@ -1,0 +1,119 @@
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ce-q0-l1-3_N200_Tn5_15-12-24-12-50$ egrep ce3 predictions.dat | egrep False|head
+144610,ce3.json,3,The boy the man the teacher the woman hit knows hates left,Who hit who?,the woman hit the teacher.,Answer: the woman hit the man.,False,6,False,1.0809540748596191
+32548,ce3.json,3,The student the man the teacher the driver knows saw likes left,Who knows who?,the driver knows the teacher.,Answer: the driver knows the man.,False,6,False,1.0810246467590332
+59105,ce3.json,3,The driver the woman the girl the teacher hit knows saw is glad,Who hit who?,the teacher hit the girl.,Answer: the teacher hit the woman.,False,5,False,1.3862993717193604
+90707,ce3.json,3,The man the student the teacher the boy knows likes hit is glad,Who knows who?,the boy knows the teacher.,Answer: the boy knows the student.,False,7,False,1.354123830795288
+65694,ce3.json,3,The girl the teacher the driver the student knows hates hit is happy,Who knows who?,the student knows the driver.,Answer: the student knows the teacher.,False,5,False,1.4083213806152344
+144399,ce3.json,3,The boy the man the teacher the girl hit saw hates is happy,Who hit who?,the girl hit the teacher.,Answer: The girl hit the man.,False,6,False,1.215630292892456
+79383,ce3.json,3,The girl the woman the teacher the driver saw hit hates is happy,Who saw who?,the driver saw the teacher.,The driver saw the woman.,False,7,False,1.1035284996032715
+147749,ce3.json,3,The boy the woman the teacher the student knows saw likes is glad,Who knows who?,the student knows the teacher.,Answer: The student knows the woman.,False,7,False,1.4477965831756592
+75935,ce3.json,3,The girl the man the teacher the driver knows hit saw is glad,Who knows who?,the driver knows the teacher.,Answer: the driver knows the man.,False,6,False,1.1702055931091309
+15705,ce3.json,3,The teacher the woman the driver the boy hit likes saw is happy,Who hit who?,the boy hit the driver.,Answer: the boy hit the woman.,False,6,False,1.3715720176696777
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ce-q0-l1-3_N200_Tn5_15-12-24-12-50$
+
+  GPT-4 & 3 & 5 & Q0 &  0 & 10 & 0 & 0
+
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ce-q1-l2-4_N200_Tn5_15-11-24-15-52$ egrep ce2 predictions.dat |egrep False|head
+12135,ce22.json,2,The boy the man the driver likes knows is glad,Who knows who?,the man knows the boy.,Answer: the driver knows the boy.,False,6,False,1.2352163791656494
+1519,ce22.json,2,The teacher the boy the student hates hit is happy,Who hit who?,the boy hit the teacher.,Answer: the student hit the teacher.,False,7,False,1.4166038036346436
+750,ce22.json,2,The teacher the girl the man knows saw is glad,Who saw who?,the girl saw the teacher.,Answer: the man saw the teacher.,False,4,False,1.5285639762878418
+10834,ce22.json,2,The boy the teacher the student knows likes is happy,Who likes who?,the teacher likes the boy.,The student likes the boy.,False,7,False,1.2964890003204346
+6065,ce22.json,2,The girl the driver the student likes saw left,Who saw who?,the driver saw the girl.,Answer: the student saw the girl.,False,6,False,1.3055379390716553
+9980,ce22.json,2,The woman the girl the student hates hit left,Who hit who?,the girl hit the woman.,Answer: The student hit the woman.,False,7,False,1.4912109375
+2677,ce22.json,2,The student the girl the boy knows hates is happy,Who hates who?,the girl hates the student.,Answer: the boy hates the student.,False,4,False,1.233510971069336
+4422,ce22.json,2,The driver the girl the boy saw hit is glad,Who hit who?,the girl hit the driver.,The boy hit the driver.,False,4,False,1.3160674571990967
+9125,ce22.json,2,The woman the teacher the girl likes saw left,Who saw who?,the teacher saw the woman.,Answer: the girl saw the woman.,False,7,False,1.43011474609375
+5168,ce22.json,2,The driver the boy the student likes hit left,Who hit who?,the boy hit the driver.,Answer: the student hit the driver.,False,7,False,1.5427250862121582
+
+  GPT-4 & 2 & 5 & Q0 &  10 & 0 & 0 & 0
+
+  
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ce-q1-l2-4_N200_Tn5_15-11-24-15-52$ egrep ce2 predictions.dat | egrep False|head
+12135,ce22.json,2,The boy the man the driver likes knows is glad,Who knows who?,the man knows the boy.,Answer: the driver knows the boy.,False,6,False,1.2352163791656494
+1519,ce22.json,2,The teacher the boy the student hates hit is happy,Who hit who?,the boy hit the teacher.,Answer: the student hit the teacher.,False,7,False,1.4166038036346436
+750,ce22.json,2,The teacher the girl the man knows saw is glad,Who saw who?,the girl saw the teacher.,Answer: the man saw the teacher.,False,4,False,1.5285639762878418
+10834,ce22.json,2,The boy the teacher the student knows likes is happy,Who likes who?,the teacher likes the boy.,The student likes the boy.,False,7,False,1.2964890003204346
+6065,ce22.json,2,The girl the driver the student likes saw left,Who saw who?,the driver saw the girl.,Answer: the student saw the girl.,False,6,False,1.3055379390716553
+9980,ce22.json,2,The woman the girl the student hates hit left,Who hit who?,the girl hit the woman.,Answer: The student hit the woman.,False,7,False,1.4912109375
+2677,ce22.json,2,The student the girl the boy knows hates is happy,Who hates who?,the girl hates the student.,Answer: the boy hates the student.,False,4,False,1.233510971069336
+4422,ce22.json,2,The driver the girl the boy saw hit is glad,Who hit who?,the girl hit the driver.,The boy hit the driver.,False,4,False,1.3160674571990967
+9125,ce22.json,2,The woman the teacher the girl likes saw left,Who saw who?,the teacher saw the woman.,Answer: the girl saw the woman.,False,7,False,1.43011474609375
+5168,ce22.json,2,The driver the boy the student likes hit left,Who hit who?,the boy hit the driver.,Answer: the student hit the driver.,False,7,False,1.5427250862121582
+
+
+GPT-4 2 5 Q1   10 & 0 & 0 &0
+
+
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ce-q1-l2-4_N200_Tn5_15-11-24-15-52$ egrep ce23 predictions.dat | egrep False|head
+115796,ce23.json,3,The woman the driver the teacher the boy likes saw hates left,Who saw who?,the teacher saw the driver.,Answer: The boy saw the driver.,False,7,False,1.3508546352386475
+52223,ce23.json,3,The driver the girl the man the woman hit saw knows left,Who saw who?,the man saw the girl.,Answer: the girl saw the driver.,False,9,False,1.5780370235443115
+99972,ce23.json,3,The man the girl the woman the boy likes hates saw is glad,Who hates who?,the woman hates the girl.,Answer: the girl hates the man.,False,9,False,1.548924446105957
+23627,ce23.json,3,The student the teacher the man the boy hit knows likes left,Who knows who?,the man knows the teacher.,Answer: The boy knows the teacher.,False,3,False,1.405649185180664
+
+GPT-4 3 5 Q1   2 & 0 & 2 &0
+
+
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ce-q1-l2-4_N200_Tn5_15-11-24-15-52$ egrep ce24 predictions.dat | egrep False|head
+135817,ce24_sample.json,4,The student the girl the woman the driver the boy saw likes hates hit is happy,Who likes who?,the driver likes the woman.,Answer: The driver likes the girl.,False,5,False,1.321239948272705
+40112,ce24_sample.json,4,The teacher the driver the boy the man the girl hit hates likes knows left,Who hates who?,the man hates the boy.,Answer: the man hates the driver.,False,6,False,1.7000470161437988
+79724,ce24_sample.json,4,The man the student the driver the teacher the girl hit likes hates saw left,Who likes who?,the teacher likes the driver.,Answer: the teacher likes the student.,False,6,False,1.2695209980010986
+43163,ce24_sample.json,4,The teacher the student the boy the woman the man hit hates saw knows left,Who hates who?,the woman hates the boy.,Answer: the woman hates the student.,False,7,False,1.3025784492492676
+59105,ce24_sample.json,4,The man the teacher the girl the student the boy hates likes saw knows left,Who likes who?,the student likes the girl.,Answer: The student likes the teacher.,False,7,False,1.3776185512542725
+65694,ce24_sample.json,4,The boy the teacher the driver the man the student saw knows likes hit left,Who knows who?,the man knows the driver.,Answer: the man knows the teacher.,False,5,False,1.444343090057373
+51459,ce24_sample.json,4,The boy the girl the student the driver the woman hates likes saw hit is glad,Who likes who?,the driver likes the student.,Answer: the student likes the girl.,False,13,False,1.9398350715637207
+139848,ce24_sample.json,4,The woman the boy the teacher the driver the man hates likes hit saw is glad,Who likes who?,the driver likes the teacher.,Answer: the teacher likes the boy.,False,12,False,1.2981531620025635
+24491,ce24_sample.json,4,The driver the woman the student the girl the teacher knows likes hates saw is happy,Who likes who?,the girl likes the student.,Answer: the student likes the woman.,False,13,False,1.3598010540008545
+44879,ce24_sample.json,4,The woman the man the driver the teacher the student likes saw knows hit is glad,Who saw who?,the teacher saw the driver.,Answer: the teacher saw the man.,False,6,False,1.6483397483825684
+
+GPT-4 4 5 Q1   0 & 7 & 3 &0
+
+
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ce-q1-l2-4_N200_Tn0_15-11-24-15-38$ egrep ce22 predictions.dat |egrep False|head
+10476,ce22.json,2,The woman the man the boy knows likes is glad,Who likes who?,the man likes the woman.,The woman likes the man.,False,4,False,2.450651168823242
+1824,ce22.json,2,The student the teacher the driver hates likes is glad,Who likes who?,the teacher likes the student.,The student likes the teacher.,False,14,False,1.4622573852539062
+409,ce22.json,2,The teacher the driver the man saw knows is happy,Who knows who?,the driver knows the teacher.,The teacher knows the driver.,False,10,False,1.3345458507537842
+12149,ce22.json,2,The boy the man the driver knows saw left,Who saw who?,the man saw the boy.,The boy saw the man.,False,6,False,1.390730381011963
+4506,ce22.json,2,The driver the man the teacher likes saw is glad,Who saw who?,the man saw the driver.,The driver saw the man.,False,12,False,1.2582948207855225
+4012,ce22.json,2,The driver the student the man hit saw is happy,Who saw who?,the student saw the driver.,The driver saw the student.,False,12,False,1.5451598167419434
+3657,ce22.json,2,The driver the teacher the girl hit likes is glad,Who likes who?,the teacher likes the driver.,The driver likes the teacher.,False,10,False,1.5135667324066162
+2286,ce22.json,2,The student the driver the woman likes saw is glad,Who saw who?,the driver saw the student.,The student saw the driver.,False,12,False,1.3672370910644531
+12066,ce22.json,2,The boy the man the student likes saw is glad,Who saw who?,the man saw the boy.,The boy saw the man.,False,6,False,1.4199614524841309
+1679,ce22.json,2,The teacher the boy the man hit hates left,Who hates who?,the boy hates the teacher.,The teacher hates the boy.,False,14,False,1.5723721981048584
+
+GPT-4 2 0 Q1   0 &  1 &9
+
+t3 t3 t2 t3 t3 t3 t3 t3 t3 t3
+
+
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ce-q1-l2-4_N200_Tn0_15-11-24-15-38$ egrep ce23 predictions.dat |egrep False|head
+301,ce23.json,3,The teacher the student the driver the man hates knows likes is happy,Who knows who?,the driver knows the student.,The student knows the teacher.,False,13,False,2.0740597248077393
+142237,ce23.json,3,The boy the girl the driver the man hit hates likes is happy,Who hates who?,the driver hates the girl.,The boy hates the girl.,False,6,False,1.3651466369628906
+121104,ce23.json,3,The woman the girl the man the teacher knows likes saw is glad,Who likes who?,the man likes the girl.,The girl likes the man.,False,8,False,1.2348527908325195
+108330,ce23.json,3,The woman the teacher the student the girl knows likes hates is glad,Who likes who?,the student likes the teacher.,The teacher likes the student.,False,14,False,1.247739553451538
+14209,ce23.json,3,The teacher the man the boy the woman saw likes hit is happy,Who likes who?,the boy likes the man.,The teacher likes the boy.,False,10,False,1.347348928451538
+49173,ce23.json,3,The driver the student the woman the girl hit likes knows is glad,Who likes who?,the woman likes the student.,The student likes the driver.,False,12,False,1.6180486679077148
+135905,ce23.json,3,The boy the student the man the woman saw hates knows left,Who hates who?,the man hates the student.,The boy hates the student.,False,3,False,1.265510082244873
+94838,ce23.json,3,The man the driver the student the woman knows hates likes left,Who hates who?,the student hates the driver.,The driver hates the student.,False,12,False,1.6806929111480713
+130676,ce23.json,3,The boy the teacher the driver the man saw likes knows left,Who likes who?,the driver likes the teacher.,The teacher likes the boy.,False,12,False,1.3443875312805176
+115878,ce23.json,3,The woman the driver the teacher the boy knows hit likes is glad,Who hit who?,the teacher hit the driver.,The driver hit the woman.,False,11,False,1.3581042289733887
+
+GPT-4 3 0 Q1   2 &0 & 8
+t3 t1 t3 t3 t3 t3 t1 t3 t3 t3
+
+
+
+(eli) (base) dan@cbs10812:~/CenterEmbedding/results/gpt-4_ce-q1-l2-4_N200_Tn0_15-11-24-15-38$ egrep ce24 predictions.dat |egrep False|head
+137807,ce24_sample.json,4,The teacher the driver the man the student the woman hates saw knows hit is glad,Who saw who?,the student saw the man.,The driver saw the man.,False,6,False,1.1430401802062988
+107687,ce24_sample.json,4,The man the boy the driver the woman the teacher likes hit knows saw is happy,Who hit who?,the woman hit the driver.,The boy hit the driver.,False,4,False,1.3506276607513428
+107330,ce24_sample.json,4,The girl the teacher the driver the student the boy likes hates knows saw is glad,Who hates who?,the student hates the driver.,The teacher hates the driver.,False,7,False,1.3854045867919922
+150706,ce24_sample.json,4,The teacher the woman the boy the man the girl saw likes hates hit left,Who likes who?,the man likes the boy.,The teacher likes the boy.,False,6,False,1.1954503059387207
+19333,ce24_sample.json,4,The woman the driver the man the student the teacher knows hit likes saw is happy,Who hit who?,the student hit the man.,The driver hit the man.,False,6,False,1.4439473152160645
+32853,ce24_sample.json,4,The student the woman the boy the girl the man hates saw likes knows left,Who saw who?,the girl saw the boy.,The woman saw the boy.,False,5,False,1.409332513809204
+83106,ce24_sample.json,4,The driver the girl the woman the boy the student saw likes hit hates is happy,Who likes who?,the boy likes the woman.,The girl likes the boy.,False,8,False,1.2020442485809326
+19441,ce24_sample.json,4,The student the teacher the man the boy the driver saw likes hit hates is happy,Who likes who?,the boy likes the man.,The teacher likes the student.,False,13,False,1.2035489082336426
+117958,ce24_sample.json,4,The driver the boy the man the girl the teacher likes hates hit knows left,Who hates who?,the girl hates the man.,The boy hates the man.,False,4,False,1.543525218963623
+122115,ce24_sample.json,4,The man the woman the driver the girl the student knows likes saw hates left,Who likes who?,the girl likes the driver.,The woman likes the driver.,False,5,False,1.8599231243133545
+
+GPT-4 4 0 Q1   8 &0 & 2
+
+t1 t1 t1 t1 t1 t1 t3 t3 t1  t1
