@@ -1,0 +1,5 @@
+model,sample_n,tuning_n,seed,file_list,example_file,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
+gpt-4,200,0,42,ce-q0-l1-4,ce1.json,200,1.0,199,0.995,0.005,1.2917940211296082
+gpt-4,200,0,42,ce-q0-l1-4,ce2.json,103,0.515,102,0.51,3.06,1.3858956110477447
+gpt-4,200,0,42,ce-q0-l1-4,ce3.json,74,0.37,74,0.37,4.085,1.2470835101604463
+gpt-4,200,0,42,ce-q0-l1-4,ce4_sample.json,34,0.17,34,0.17,5.4,1.381455007791519

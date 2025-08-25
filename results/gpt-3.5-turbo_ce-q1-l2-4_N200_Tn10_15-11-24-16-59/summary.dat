@@ -1,0 +1,4 @@
+model,sample_n,tuning_n,seed,file_list,example_file,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
+gpt-3.5-turbo,200,10,42,ce-q1-l2-4,ce22.json,142,0.71,141,0.705,1.95,1.0702195572853088
+gpt-3.5-turbo,200,10,42,ce-q1-l2-4,ce23.json,73,0.365,72,0.36,5.325,1.0879103827476502
+gpt-3.5-turbo,200,10,42,ce-q1-l2-4,ce24_sample.json,15,0.075,15,0.075,8.07,1.0798444283008575
