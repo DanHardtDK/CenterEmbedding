@@ -53,16 +53,3 @@ python eli/center_embed.py --file_list data/lists/ce-lvl1 --model llama-7b-chat 
 Copy a model (e.g., from eli/models/llama/__init__.py) and paste it in a new file in the relevant folder under `eli/models/`. Make sure to keep the same model structure but update the model name, the API endpoint, and the prompt.
 
 Make sure to add this model to the model registry in `eli/models/__init__.py`.
-
-## Using Weave
-Weave is on Weights & Biases new service for LLMs. We have a W&B organization named `cbs-nlp`. To use Weave, you need to have a W&B account and be added to the `cbs-nlp` organization. Check you email :)
-
-Whenever you run the script, you will see something like this
-
-```bash
-(centerembed) ➜  CenterEmbedding git:(debugging) ✗ python eli/center_embed.py --file_list data/lists/ce-lvl1 --model llama-7b-chat --sample_n 5 --iterations 1 --tuning_n 0 --prompt_strategy center_embed_tn1 --seed 42
-
-Logged in as Weights & Biases user: nthomsen.
-View Weave data at https://wandb.ai/cbs-nlp/llama-7b-chat_center_embed_tn1_ce-lvl1_N5_Tn0_I1/weave
-```
-You can click on this link to see the Weave dashboard for this run.
