@@ -7,14 +7,17 @@ Hardt, D., (2025) “Sparks of Pure Competence in LLMs: the Case of Syntactic Ce
 
 ## Data
 
-The synthetic data can be found in /data/center_embed
-ce1.json is level 1 question 0 as described in the paper
+The synthetic data can be found in data/center_embed
+
+ce1.json is level 1 question 0 (as described in the paper)
+
 ce22.json is level 2 question 1
+
 etc.
 
 ## Results
 
-Results of each run are stored in ./results
+Results of each run are stored in results
 
 Folder names specify [model] [data] [number examples] [runtime].
 
