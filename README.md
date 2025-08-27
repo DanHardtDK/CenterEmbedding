@@ -1,11 +1,16 @@
 # CenterEmbedding
 
+## Paper
+
+Hardt, D., (2025) “Sparks of Pure Competence in LLMs: the Case of Syntactic Center Embedding in English”, Society for Computation in Linguistics 8(1): 13. doi: https://doi.org/10.7275/scil.3149
+
 
 ## Data
 
 The synthetic data can be found in /data/center_embed
-ce1.json is level 1 question 0
+ce1.json is level 1 question 0 as described in the paper
 ce22.json is level 2 question 1
+etc.
 
 ## Results
 
@@ -17,19 +22,6 @@ model: llama3-70b
 data: ce-q0-l1-4
 number examples: 200
 run time: dec 12 2024, 14:25
-
-
-## Paper
-
-Hardt, D., (2025) “Sparks of Pure Competence in LLMs: the Case of Syntactic Center Embedding in English”, Society for Computation in Linguistics 8(1): 13. doi: https://doi.org/10.7275/scil.3149
-
-
-## Producing Results
-
-(need: conda activate ellipses-gpt)
-
-python eli/center_embed.py --file_list data/lists/ce-lvl1 --model llama-7b-chat --sample_n 5 --iterations 1 --tuning_n 0 --prompt_strategy center_embed_tn1 --seed 42
-
 
 ## Get started
 1. Create a conda env from the environment.yml file, and activate it
@@ -64,7 +56,6 @@ options:
   --tuning_n {0,1,2,3,5,10,20}
                         Number of in-prompt n-shot examples to use for tuning
   --seed SEED           random seed for reproducibility
-(/Users/nicolai/Desktop/cbs/research/CenterEmbedding/centerembed) ➜  CenterEmbedding git:(debugging) ✗
 ```
 
 3. Run the script with the desired options. For example:
