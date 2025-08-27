@@ -15,12 +15,19 @@ etc.
 ## Results
 
 Results of each run are stored in ./results
+
 Folder names specify [model] [data] [number examples] [runtime].
+
 For example
+
 llama3-70b_ce-q0-l1-4_N200_Tn0_15-12-24-14-25
+
 model: llama3-70b
+
 data: ce-q0-l1-4
+
 number examples: 200
+
 run time: dec 12 2024, 14:25
 
 ## Get started
