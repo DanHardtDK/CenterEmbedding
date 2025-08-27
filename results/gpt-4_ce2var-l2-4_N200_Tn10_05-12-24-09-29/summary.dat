@@ -1,0 +1,4 @@
+model,sample_n,tuning_n,seed,file_list,example_file,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
+gpt-4,200,10,42,ce2var-l2-4,ce2var2.json,183,0.915,183,0.915,0.885,1.4669119358062743
+gpt-4,200,10,42,ce2var-l2-4,ce2var3.json,166,0.83,166,0.83,2.965,1.4103014063835144
+gpt-4,200,10,42,ce2var-l2-4,ce2var4.json,30,0.15,30,0.15,14.585,1.434467635154724

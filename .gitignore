@@ -168,3 +168,6 @@ centerembed/
 centerembed
 config.cfg
 results/*/predictions.dat
+
+"*~"
+"__pycache__/"

@@ -1,0 +1,2 @@
+model,prompt_strategy,file_list,example_file,sample_n,tuning_n,iterations,seed,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
+llama3-70b,center_embed_tn1,500,0,1,42,ce-q0-l4,ce4_sample.json,339,0.678,339,0.678,1.936,10.100992565631866

@@ -1,0 +1,2 @@
+model,prompt_strategy,file_list,example_file,sample_n,tuning_n,iterations,seed,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
+gpt-4,center_embed_tn2,500,0,1,42,ce-q0-l2-3,ce3.json,499,0.998,499,0.998,0.0,15.328463176727295

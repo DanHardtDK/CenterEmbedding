@@ -1,0 +1,4 @@
+model,sample_n,tuning_n,seed,file_list,example_file,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
+gpt-4,200,0,42,ceVPill2-4,ceVPillusion2.json,81,0.405,81,0.405,2.19,1.1425121378898622
+gpt-4,200,0,42,ceVPill2-4,ceVPillusion3.json,82,0.41,82,0.41,2.18,1.1566589379310608
+gpt-4,200,0,42,ceVPill2-4,ceVPillusion4.json,99,0.495,99,0.495,2.01,1.1102254915237426
