@@ -1,6 +1,30 @@
 # CenterEmbedding
 
-## Sample Cmd:
+
+## Data
+
+The synthetic data can be found in /data/center_embed
+ce1.json is level 1 question 0
+ce22.json is level 2 question 1
+
+## Results
+
+Results of each run are stored in ./results
+Folder names specify [model] [data] [number examples] [runtime].
+For example
+llama3-70b_ce-q0-l1-4_N200_Tn0_15-12-24-14-25
+model: llama3-70b
+data: ce-q0-l1-4
+number examples: 200
+run time: dec 12 2024, 14:25
+
+
+## Paper
+
+Hardt, D., (2025) “Sparks of Pure Competence in LLMs: the Case of Syntactic Center Embedding in English”, Society for Computation in Linguistics 8(1): 13. doi: https://doi.org/10.7275/scil.3149
+
+
+## Producing Results
 
 (need: conda activate ellipses-gpt)
 
@@ -54,15 +78,3 @@ Copy a model (e.g., from eli/models/llama/__init__.py) and paste it in a new fil
 
 Make sure to add this model to the model registry in `eli/models/__init__.py`.
 
-## Using Weave
-Weave is on Weights & Biases new service for LLMs. We have a W&B organization named `cbs-nlp`. To use Weave, you need to have a W&B account and be added to the `cbs-nlp` organization. Check you email :)
-
-Whenever you run the script, you will see something like this
-
-```bash
-(centerembed) ➜  CenterEmbedding git:(debugging) ✗ python eli/center_embed.py --file_list data/lists/ce-lvl1 --model llama-7b-chat --sample_n 5 --iterations 1 --tuning_n 0 --prompt_strategy center_embed_tn1 --seed 42
-
-Logged in as Weights & Biases user: nthomsen.
-View Weave data at https://wandb.ai/cbs-nlp/llama-7b-chat_center_embed_tn1_ce-lvl1_N5_Tn0_I1/weave
-```
-You can click on this link to see the Weave dashboard for this run.
