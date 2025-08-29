@@ -11,9 +11,11 @@ The synthetic data can be found in data/center_embed
 
 ce1.json is level 1 question 0 (as described in the paper)
 
-ce22.json is level 2 question 1
 
-etc.
+ce[1-4].json designates a level 1-4, for question 0
+
+ce22.json is level 2 question 1
+ce[2-4]2.json is level 2-4, question 1
 
 ## Results
 
@@ -43,36 +45,11 @@ conda activate ./centerembed
 
 2. Run `python eli/center_embed.py --help` to see the available options. Should show the following:
 
-```bash
-CenterEmbedding git:(debugging) ✗ python eli/center_embed.py --help
-usage: center_embed.py [-h] [--file_list FILE_LIST] [--model MODEL]
-                       [--prompt_strategy {default,center_embed,center_embed_tn1,center_embed_tn2,supervised_cot,unsupervised_cot}]
-                       [--sample_n SAMPLE_N] [--iterations {1,2,3,5,10,50}]
-                       [--tuning_n {0,1,2,3,5,10,20}] [--seed SEED]
+Sample Run
 
-options:
-  -h, --help            show this help message and exit
-  --file_list FILE_LIST
-                        Path for txt containing list of files to test against
-  --model MODEL         LLM to test
-  --prompt_strategy {default,center_embed,center_embed_tn1,center_embed_tn2}
-                        strategy to use for tuning
-			center_embed = P0
-			center_embed_tn1 = P1 (prompt with single level 1 example, with Q0 question)
-			center_embed_tn1 = P1 (prompt with two examples, a level 1 example and a level 2 example, both with Q0 questions)
-  --sample_n SAMPLE_N   number of ellipses examples to test
-  --iterations {1,2,3,5,10,50}
-                        number of iterations to run
-  --tuning_n {0,1,2,3,5,10,20}
-                        Number of in-prompt n-shot examples to use for tuning
-  --seed SEED           random seed for reproducibility
-```
+python eli/center_embed.py --file_list data/lists/ce-q0-l1-4 --model gpt-4 --sample_n 200 --tuning_n 0 --seed 42
 
-3. Run the script with the desired options. For example:
 
-```bash
-python eli/center_embed.py --file_list data/lists/ce-lvl1 --model llama-7b-chat --sample_n 5 --iterations 1 --tuning_n 0 --prompt_strategy center_embed_tn1 --seed 42
-```
 
 ## Adding models
 Copy a model (e.g., from eli/models/llama/__init__.py) and paste it in a new file in the relevant folder under `eli/models/`. Make sure to keep the same model structure but update the model name, the API endpoint, and the prompt.
