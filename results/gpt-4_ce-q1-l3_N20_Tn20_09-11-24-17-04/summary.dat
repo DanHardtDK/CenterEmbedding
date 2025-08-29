@@ -1,2 +1,0 @@
-model,file_list,example_file,sample_n,tuning_n,seed,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
-gpt-4,20,20,42,ce-q1-l3,ce23.json,20,1.0,20,1.0,0.0,1.3843533635139464

@@ -1,2 +1,0 @@
-model,prompt_strategy,file_list,example_file,sample_n,tuning_n,iterations,seed,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
-llama3-70b,center_embed_tn1,500,0,1,42,ce-lvl2,ce2.json,430,0.8775510204081632,430,0.8775510204081632,0.0,50.51259761619568
