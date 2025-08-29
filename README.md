@@ -12,11 +12,15 @@ The synthetic data can be found in data/center_embed
 ce1.json is level 1 question 0 (as described in the paper)
 
 
-ce[1-4].json designates a level 1-4, for question 0
+ce[1-4].json designates level 1-4, for question 0
+
 
 ce22.json is level 2 question 1
 
+
 ce[2-4]2.json is level 2-4, question 1
+
+
 
 ## Results
 
@@ -44,9 +48,7 @@ conda env create -f environment.yml
 conda activate ./centerembed
 ```
 
-2. Run `python eli/center_embed.py --help` to see the available options. Should show the following:
-
-Sample Run
+2. Sample Run
 
 python eli/center_embed.py --file_list data/lists/ce-q0-l1-4 --model gpt-4 --sample_n 200 --tuning_n 0 --seed 42
 
