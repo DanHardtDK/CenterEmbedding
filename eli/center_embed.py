@@ -1,6 +1,5 @@
 import pdb  # noqa: F401
 import random
-import weave
 import asyncio
 
 from utils.args import ARGS
@@ -15,8 +14,6 @@ from evaluate import Evaluator, eval_function
 def run() -> None:
     # set seed
     random.seed(ARGS.seed)
-
-    weave.init(ARGS.EXP_NAME)  # Initialize weave experiment
 
     answerForm = "DEFAULT"
     if (ARGS.answerForm == "YN"):
