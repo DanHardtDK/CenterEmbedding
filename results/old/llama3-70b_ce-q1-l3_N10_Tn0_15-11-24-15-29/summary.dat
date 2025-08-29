@@ -1,0 +1,2 @@
+model,file_list,example_file,sample_n,tuning_n,seed,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
+llama3-70b,10,0,42,ce-q1-l3,ce23.json,1,0.1,1,0.1,9.5,3.0803012371063234

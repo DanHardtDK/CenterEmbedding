@@ -1,0 +1,4 @@
+model,prompt_strategy,file_list,example_file,sample_n,tuning_n,iterations,seed,correct_true_count,correct_true_fraction,exact_match_true_count,exact_match_true_fraction,edit_distance_mean,model_latency_mean
+llama3-70b,center_embed_tn2,500,0,1,42,ce-q1-l2-4,ce22.json,98,0.196,98,0.196,8.79,11.012227345466615
+llama3-70b,center_embed_tn2,500,0,1,42,ce-q1-l2-4,ce23.json,53,0.106,53,0.106,9.606,10.804792368888855
+llama3-70b,center_embed_tn2,500,0,1,42,ce-q1-l2-4,ce24_sample.json,13,0.026,13,0.026,14.396,13.19906596517563
